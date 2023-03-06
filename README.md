@@ -3,7 +3,7 @@
 <h2>INTRODUTION</h2>
 
 This project was proposed by teacher of the discipline of Data Struct and Algorithms the
-Mr Pires. The goal this project is so the student remember definitions and concepts about
+Mr Pires. The goal this project is that the student remember definitions and concepts about
 matrix and learn the use metode of matrix walking of greedy way. You see in the code and 
 test cases my programming logic, I use the C programming lenguage for developed
 because this lenguage was proposed by Mr Pires.
