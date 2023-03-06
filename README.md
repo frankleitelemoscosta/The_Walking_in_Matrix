@@ -11,5 +11,5 @@ because this lenguage was proposed by Mr Pires.
 <h2>IMPLEMETATION DECISIONS</h2>
 
 The first decision was add the files for create matrix and insert this matrix in the text files
-of the project, I init the implemetation this way because I don´t have skip this party then the 
+of the project, I init the implemetation this way because I don´t have way to skip this party then the 
 first thing that program need is the matrix and your elements
