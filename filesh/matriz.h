@@ -29,6 +29,7 @@
     void SetMatrizSize();//esse métodos serve para salvar no arquivo o tamanho da matriz
     void SaveMatriz(Matriz *matriz);//esse método serve para escrever a matriz no arquivo
     int FillingTheMatriz(Matriz *matriz,int *vetor,int contador);
+    void PrintMatrix();
 //fim dos métodos ou funções
 
 #endif

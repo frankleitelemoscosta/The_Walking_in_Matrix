@@ -6,15 +6,17 @@
 
 int main() {
     //variaveis de ambiente
-        int quantidadeMatrizes = 2;
+        signed int quantidadeMatrizes = 2;
         Matriz Matriz;
         int contador = 0;
-        int parada = 1;
+        signed int parada = 1;
         int *vetor;
-        int linhas;
-        int colunas;
+        signed int linhas;
+        signed int colunas;
         int CasasDoVetor;
         char opcao; 
+        signed int contador_aux;
+        
     //fim das variaveis de ambiente
     
     opcao = 'P';//inicializando a variavel
@@ -68,16 +70,23 @@ int main() {
             fscanf(file,"%d",&vetor[i]);
         }
     //fim do preenchimento
-    fclose(file);
 
-    contador = 0;
+    //fechando o arquivo
+        fclose(file);
+    //fim do fechamento
 
-    //preenchimento 
+    contador = 0;//reiniciando o contador para que seja possível usar esta mesma variavel
+
+    //preenchimento da matriz
     while(parada !=0)
     {
         //preenchendo a matriz com as informações do arquivo
             contador = FillingTheMatriz(&Matriz,vetor,contador);
         //fim do preenchimento
+            
+        //para enumerar as matrizes
+            contador_aux++;
+        //fim da operação
 
             while( opcao!='N' &&  opcao!='S' ){
                 //para apresentar os componentes ao usuario
@@ -90,10 +99,11 @@ int main() {
                         printf("\n");
                     }
                 //fim do procedimento
-                printf("Deseja mudar a matriz ou quer que ela permanessa como esta?[S/N]\n");
+                printf("Deseja mudar a matriz ou quer que ela permanessa como esta?[S/N],esta é a matriz número [%d], Se caso não o programa será encerrado\n",contador_aux);
                 scanf(" %c",&opcao);
                 opcao = toupper(opcao);//garantindo que a resposta será uma letra maiuscula
             }
+
         if(opcao == 'N')break;//encerramento do while
         opcao = 'p';
     }
