@@ -16,9 +16,14 @@ int main() {
         int CasasDoVetor;
         char opcao; 
         signed int contador_aux;
+        signed int initRow;
+        signed int initColunm;
+        signed int Time;
         
     //fim das variaveis de ambiente
     
+    Time = 0;
+
     opcao = 'P';//inicializando a variavel
 
     //escrevendo o arquivo
@@ -84,27 +89,37 @@ int main() {
             contador = FillingTheMatriz(&Matriz,vetor,contador);
         //fim do preenchimento
             
-        //para enumerar as matrizes
+        //enumeration matrix
             contador_aux++;
-        //fim da operação
+        //finhish this operator
 
+        printf("You want init the walking in the matrix in the row?");
+        scanf("%d",&initRow);
+
+        printf("You want init the walking in the matrix in the colunm?");
+        scanf("%d",&initColunm);
+
+        printf("init this program with the [%d]° matrix in the row [%d] and colunm [%d]\nnow this program will walkin to position that will have the bigger element\n",contador_aux,initRow,initColunm);
+
+        SearchingTheBiggerElement(&Matriz,initColunm,initRow,&Time);
+
+        printf("O tempo para percorrer a matriz foi: %d\n",Time);
+
+
+        //for print matrix and ask if the user want finish this program
             while( opcao!='N' &&  opcao!='S' ){
-                //para apresentar os componentes ao usuario
-                    for (int i = 0; i < linhas; i++)
-                    {
-                        for (int j = 0; j < colunas; j++)
-                        {
-                            printf("[%d]",Matriz.Matriz[i][j].valor);
-                        }
-                        printf("\n");
-                    }
-                //fim do procedimento
-                printf("Deseja mudar a matriz ou quer que ela permanessa como esta?[S/N],esta é a matriz número [%d], Se caso não o programa será encerrado\n",contador_aux);
+                
+                //para printar a matriz
+                    PrintMatrix(&Matriz);
+                //finish
+
+                printf("You want change the constitution of the matrix?[S/N],this is matrix number [%d], if don´t this program will be close\n",contador_aux);
                 scanf(" %c",&opcao);
                 opcao = toupper(opcao);//garantindo que a resposta será uma letra maiuscula
             }
+        //finish this operator
 
-        if(opcao == 'N')break;//encerramento do while
+        if(opcao == 'N')break;//finish the while
         opcao = 'p';
     }
 
