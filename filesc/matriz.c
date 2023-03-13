@@ -15,7 +15,7 @@ void GeneretaMatrizValues(Matriz *matriz)
 void SetMatrizSize(){
     FILE *file;
 
-    file = fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/LEITURA DE ARQUIVOS/teste/dados.txt","w");
+    file = fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.txt","w");
     if(file == NULL){
         printf("This is not open!");
         return ;//vai apenas encerrar o programa
@@ -30,7 +30,7 @@ void SaveMatriz(Matriz *matriz)
 {
     FILE *file;
 
-    fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/LEITURA DE ARQUIVOS/teste/dados.txt","a");
+    fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.txt","a");
     if(file == NULL){
         printf("This is not open!");
         return ;//vai apenas encerrar o programa
@@ -50,7 +50,6 @@ void SaveMatriz(Matriz *matriz)
     //fim da escrita
     fprintf(file,"\n");
     fclose(file);   
-
 
 }
 
@@ -91,9 +90,6 @@ void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int init
         signed int Bigger = 0;
         signed int Row;
         signed int Colunm;
-        bool DownCondition;
-        bool RightCondition;
-        bool DiagonallyCondition;
         signed int TimeL;
     //finish variables of ambience
 
@@ -103,29 +99,21 @@ void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int init
     Colunm = initColunm;
 
     while(stop != 1){
-        //checking, if jack be in the around from last position
-            ((Row+1) == (rows - 1) && Colunm == (columns-1)) ? (DownCondition = true) : (DownCondition = false);// in the down
-            (Row == (rows - 1) && (Colunm + 1) == (columns - 1)) ? (RightCondition = true) : (RightCondition = false);//in the right 
-            ((Row+1) == (rows - 1) && (Colunm + 1) == (columns - 1)) ? (DiagonallyCondition = true) : (DiagonallyCondition = false);//in the diagonally
-        //finish check
 
-        //this used for put Jack in the last position
-            (DownCondition == true) ? (Row = Row + 1) : (Row = Row);
-            (RightCondition == true) ? (Colunm = Colunm + 1) : (Colunm = Colunm);
-            (DiagonallyCondition == true) ? (Row = Row + 1 , Colunm = Colunm + 1) : (Row = Row);
-        //finish
-
-        (DownCondition == false && RightCondition == false && DiagonallyCondition == false) ? ((matriz->Matriz[Row + 1][Colunm].valor > Bigger) ? ( Bigger = matriz->Matriz[Row + 1][Colunm].valor ) : ( Bigger = Bigger)) : (printf(" "));//one Row the down
-        (RightCondition == false && DownCondition == false && DiagonallyCondition == false) ? ((matriz->Matriz[Row][Colunm + 1].valor > Bigger) ? ( Bigger = matriz->Matriz[Row][Colunm + 1].valor) : ( Bigger = Bigger )) : (printf(" "));//one Colunm the right
-        (RightCondition == false && DownCondition == false && DiagonallyCondition == false) ? ((matriz->Matriz[Row + 1][Colunm + 1].valor > Bigger) ? ( Bigger = matriz->Matriz[Row + 1][Colunm + 1].valor) : ( Bigger = Bigger )):(printf(" "));//in the diagonally
-
+        //to check the houses around where Jack is
+        ((Row + 1) < 4) ? ((matriz->Matriz[Row + 1][Colunm].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm].valor):(printf(" "))):(printf("Jack esta na ultima linha"));
+        ((Colunm + 1) < 4) ? ((matriz->Matriz[Row][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row][Colunm + 1].valor):(printf(" "))):(printf("Jack esta na ultima coluna\n"));
+        ((Colunm + 1) < 4 && (Row + 1) < 4) ? ((matriz->Matriz[Row + 1][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm + 1].valor):(printf(" "))):(printf("Jack esta prestes a cair fora\n"));
+        //finish the check
+        
         TimeL++;//incrementing the time
 
-        if(DownCondition == false && RightCondition == false && DiagonallyCondition == false){
-            (matriz->Matriz[Row + 1][Colunm].valor == Bigger) ? ( Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
-            (matriz->Matriz[Row][Colunm + 1].valor == Bigger) ? ( Colunm = Colunm + 1) : ( Bigger = Bigger );//one Colunm the right
-            (matriz->Matriz[Row + 1][Colunm + 1].valor == Bigger) ? ( Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
-        }
+        (matriz->Matriz[Row + 1][Colunm].valor == Bigger) ? ( Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
+        (matriz->Matriz[Row][Colunm + 1].valor == Bigger) ? ( Colunm = Colunm + 1) : ( Bigger = Bigger );//one Colunm the right
+        (matriz->Matriz[Row + 1][Colunm + 1].valor == Bigger) ? ( Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
+
+        printf("%d ",Bigger);
+        getchar();
 
         Bigger = 0;
 

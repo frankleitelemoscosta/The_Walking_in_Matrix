@@ -6,7 +6,7 @@
 
 int main() {
     //variaveis de ambiente
-        signed int quantidadeMatrizes = 2;
+        signed int quantidadeMatrizes = 4;
         Matriz Matriz;
         int contador = 0;
         signed int parada = 1;
