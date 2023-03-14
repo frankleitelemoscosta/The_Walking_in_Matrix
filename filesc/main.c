@@ -37,7 +37,7 @@ int main() {
     //abrindo o arquivo para retirar as matrizes
         FILE *file;
 
-        file = fopen("dados.txt","r");
+        file = fopen("dados.data","r");
         if(file == NULL){
             printf("This is not open!");
             return 1;//vai apenas encerrar o programa e retornar o valor 1 identificando o erro

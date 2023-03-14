@@ -1,5 +1,4 @@
 #include "/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/LEITURA DE ARQUIVOS/teste/filesh/matriz.h"
-#include<stdbool.h>
 
 void GeneretaMatrizValues(Matriz *matriz)
 {
@@ -15,9 +14,9 @@ void GeneretaMatrizValues(Matriz *matriz)
 void SetMatrizSize(){
     FILE *file;
 
-    file = fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.txt","w");
+    file = fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.data","w");
     if(file == NULL){
-        printf("This is not open!");
+        printf("This is not open !");
         return ;//vai apenas encerrar o programa
     }
 
@@ -30,9 +29,9 @@ void SaveMatriz(Matriz *matriz)
 {
     FILE *file;
 
-    fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.txt","a");
+    fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.data","a");
     if(file == NULL){
-        printf("This is not open!");
+        printf("This is not open !");
         return ;//vai apenas encerrar o programa
     }
 
