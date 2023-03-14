@@ -9,8 +9,8 @@
 //fim bibliotecas
 
 
-#define rows 4
-#define columns 4
+#define rows 14
+#define columns 14
 
 //compenentes da matriz
     typedef struct Item{

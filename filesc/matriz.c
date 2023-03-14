@@ -100,16 +100,20 @@ void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int init
     while(stop != 1){
 
         //to check the houses around where Jack is
-        ((Row + 1) < 4) ? ((matriz->Matriz[Row + 1][Colunm].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm].valor):(printf(" "))):(printf("Jack esta na ultima linha"));
-        ((Colunm + 1) < 4) ? ((matriz->Matriz[Row][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row][Colunm + 1].valor):(printf(" "))):(printf("Jack esta na ultima coluna\n"));
-        ((Colunm + 1) < 4 && (Row + 1) < 4) ? ((matriz->Matriz[Row + 1][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm + 1].valor):(printf(" "))):(printf("Jack esta prestes a cair fora\n"));
+        ((Row + 1) < rows) ? ((matriz->Matriz[Row + 1][Colunm].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm].valor):(printf(" "))):(printf("Jack esta na ultima linha"));
+        ((Colunm + 1) < columns) ? ((matriz->Matriz[Row][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row][Colunm + 1].valor):(printf(" "))):(printf("Jack esta na ultima coluna\n"));
+        ((Colunm + 1) < columns && (Row + 1) < rows) ? ((matriz->Matriz[Row + 1][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm + 1].valor):(printf(" "))):(printf("Jack esta prestes a cair fora\n"));
+        ((Colunm - 1) > (-1)) ? ((matriz->Matriz[Row][Colunm - 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row][Colunm - 1].valor) : (Bigger = Bigger)) : (printf(" "));
         //finish the check
         
         TimeL++;//incrementing the time
 
-        (matriz->Matriz[Row + 1][Colunm].valor == Bigger) ? ( Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
-        (matriz->Matriz[Row][Colunm + 1].valor == Bigger) ? ( Colunm = Colunm + 1) : ( Bigger = Bigger );//one Colunm the right
-        (matriz->Matriz[Row + 1][Colunm + 1].valor == Bigger) ? ( Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
+        (matriz->Matriz[Row + 1][Colunm].valor == Bigger) ? ( matriz->Matriz[Row + 1][Colunm].valor = 0, Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
+        (matriz->Matriz[Row][Colunm + 1].valor == Bigger) ? ( matriz->Matriz[Row][Colunm + 1].valor = 0, Colunm = Colunm + 1 ) : ( Bigger = Bigger );//one Colunm the right
+        (matriz->Matriz[Row + 1][Colunm + 1].valor == Bigger) ? ( matriz->Matriz[Row + 1][Colunm + 1].valor = 0, Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
+        (matriz->Matriz[Row][Colunm - 1].valor == Bigger) ? ( matriz->Matriz[Row][Colunm - 1].valor = 0, Colunm = Colunm - 1) : ( Bigger = Bigger );
+
+        (Row == rows) ? (Colunm = Colunm + 1) : (Row = Row);//for to check if the jack is in the last row
 
         printf("%d ",Bigger);
         getchar();
