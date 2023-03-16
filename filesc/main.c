@@ -18,12 +18,9 @@ int main() {
         signed int contador_aux;
         signed int initRow;
         signed int initColunm;
-        signed int Time;
-        
+        int soma;
     //fim das variaveis de ambiente
     
-    Time = 0;
-
     opcao = 'P';//inicializando a variavel
 
     //escrevendo o arquivo
@@ -81,6 +78,8 @@ int main() {
     //fim do fechamento
 
     contador = 0;//reiniciando o contador para que seja possível usar esta mesma variavel
+    soma = 0;
+    contador_aux = 0;
 
     //preenchimento da matriz
     while(parada !=0)
@@ -101,9 +100,9 @@ int main() {
 
         printf("init this program with the [%d]° matrix in the row [%d] and colunm [%d]\nnow this program will walkin to position that will have the bigger element\n",contador_aux,initRow,initColunm);
 
-        SearchingTheBiggerElement(&Matriz,initColunm,initRow,&Time);
+        SearchingTheBiggerElement(&Matriz,initColunm,initRow,&soma);
 
-        printf("O tempo para percorrer a matriz foi: %d\n",Time);
+        printf("A soma dos elementos da matriz é: (%d)\n",soma);
 
 
         //for print matrix and ask if the user want finish this program

@@ -1,4 +1,4 @@
-#include "/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/LEITURA DE ARQUIVOS/teste/filesh/matriz.h"
+#include "/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/filesh/matriz.h"
 
 void GeneretaMatrizValues(Matriz *matriz)
 {
@@ -6,7 +6,7 @@ void GeneretaMatrizValues(Matriz *matriz)
     {
         for (int j = 0; j < columns; j++)
         {
-            matriz->Matriz[i][j].valor = rand()%999;//preencher a matriz
+            matriz->Matriz[i][j].valor = rand()%99;//preencher a matriz
         }
     }
 }
@@ -73,7 +73,7 @@ void PrintMatrix(Matriz *matriz){
         {
             for (int j = 0; j < columns; j++)
             {
-                printf("[%d]",matriz->Matriz[i][j].valor);
+                printf("[ %d ]",matriz->Matriz[i][j].valor);
             }
             printf("\n");
         }
@@ -82,20 +82,19 @@ void PrintMatrix(Matriz *matriz){
 }
 
 
-void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int initColunm,signed int *Time)
+void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int initColunm, signed int *soma)
 {
     //variables of ambience    
         signed int stop = 0;
         signed int Bigger = 0;
         signed int Row;
         signed int Colunm;
-        signed int TimeL;
     //finish variables of ambience
-
-    TimeL = 0;//init the time for the walking
 
     Row = initRow;
     Colunm = initColunm;
+
+    *soma += matriz->Matriz[Row][Colunm].valor;
 
     while(stop != 1){
 
@@ -105,15 +104,13 @@ void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int init
         ((Colunm + 1) < columns && (Row + 1) < rows) ? ((matriz->Matriz[Row + 1][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm + 1].valor):(printf(" "))):(printf("Jack esta prestes a cair fora\n"));
         ((Colunm - 1) > (-1)) ? ((matriz->Matriz[Row][Colunm - 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row][Colunm - 1].valor) : (Bigger = Bigger)) : (printf(" "));
         //finish the check
-        
-        TimeL++;//incrementing the time
 
-        (matriz->Matriz[Row + 1][Colunm].valor == Bigger) ? ( matriz->Matriz[Row + 1][Colunm].valor = 0, Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
-        (matriz->Matriz[Row][Colunm + 1].valor == Bigger) ? ( matriz->Matriz[Row][Colunm + 1].valor = 0, Colunm = Colunm + 1 ) : ( Bigger = Bigger );//one Colunm the right
-        (matriz->Matriz[Row + 1][Colunm + 1].valor == Bigger) ? ( matriz->Matriz[Row + 1][Colunm + 1].valor = 0, Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
-        (matriz->Matriz[Row][Colunm - 1].valor == Bigger) ? ( matriz->Matriz[Row][Colunm - 1].valor = 0, Colunm = Colunm - 1) : ( Bigger = Bigger );
+        (matriz->Matriz[Row + 1][Colunm].valor == Bigger) ? ( *soma += matriz->Matriz[Row + 1][Colunm].valor ,matriz->Matriz[Row + 1][Colunm].valor = 0, Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
+        (matriz->Matriz[Row][Colunm + 1].valor == Bigger) ? ( *soma += matriz->Matriz[Row][Colunm + 1].valor ,matriz->Matriz[Row][Colunm + 1].valor = 0, Colunm = Colunm + 1 ) : ( Bigger = Bigger );//one Colunm the right
+        (matriz->Matriz[Row + 1][Colunm + 1].valor == Bigger) ? ( *soma += matriz->Matriz[Row + 1][Colunm + 1].valor ,matriz->Matriz[Row + 1][Colunm + 1].valor = 0, Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
+        (matriz->Matriz[Row][Colunm - 1].valor == Bigger) ? ( *soma += matriz->Matriz[Row][Colunm - 1].valor ,matriz->Matriz[Row][Colunm - 1].valor = 0, Colunm = Colunm - 1) : ( Bigger = Bigger );
 
-        (Row == rows) ? (Colunm = Colunm + 1) : (Row = Row);//for to check if the jack is in the last row
+        (Row == rows) ? (*soma += matriz->Matriz[Row][Colunm + 1].valor , Colunm = Colunm + 1) : (Row = Row);//for to check if the jack is in the last row
 
         printf("%d ",Bigger);
         getchar();
@@ -123,5 +120,4 @@ void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int init
         (Row == (rows-1) && Colunm == (columns-1)) ? (stop = 1) : (stop = stop);
 
     }
-    *Time = TimeL;//this is used for transient value of the time to the variable Time that be in the file main
 }

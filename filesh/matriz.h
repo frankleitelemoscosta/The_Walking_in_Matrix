@@ -9,8 +9,8 @@
 //fim bibliotecas
 
 
-#define rows 14
-#define columns 14
+#define rows 2
+#define columns 2
 
 //compenentes da matriz
     typedef struct Item{
@@ -30,7 +30,7 @@
     void SaveMatriz(Matriz *matriz);//esse método serve para escrever a matriz no arquivo
     int FillingTheMatriz(Matriz *matriz,int *vetor,int contador);
     void PrintMatrix(Matriz *matriz);//esse método é utilizado estritamente para imprimir a matriz
-    void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int initColunm,signed int *Time);
+    void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int initColunm, signed int *soma);
 //fim dos métodos ou funções
 
 #endif
