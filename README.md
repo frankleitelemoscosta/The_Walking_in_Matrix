@@ -49,6 +49,40 @@ stages, they are:
   <li>Results</li>
 </ul>
 
+<h3>COMPILER</h3>
+
+The compiler is the first thing for you execute and happend for program init,
+for this you write make in terminal and after you write make run for execute
+the program look:
+
+![](https://user-images.githubusercontent.com/107070061/226108916-b37c30be-d111-4ec2-9d4a-1e01bd3901ed.gif)
+
+<h3>EXECUTION</h3>
+
+After this procedure the compiler read a main, where the first comand is open
+and write the file data that not have the matrix for walking, in this moment
+the function "SetMatrixSize" and function "SaveMatrix" are called and insert 
+in the file the size and the elements of the matrix, look:
+
+Location where the function be in the main file:
+
+![](https://user-images.githubusercontent.com/107070061/226125908-841bb7df-d8d9-4c62-8e0b-346aef1f8646.png)
+
+Insert elements in the matrix:
+
+![](https://user-images.githubusercontent.com/107070061/226119230-e25537be-8889-48f3-a903-aea7a2b00a11.gif)
+
+Later the compiler open again the data file and read the first matrix recorded 
+in this file, and this can seem repetitive and wrong, but no because in the moment
+of recorde matrix in the data file is used just one matrix and 
+
+First procedure:
+
+
+
+After this procedure the program init and the first, you will see the question:
+""You want init the walking in the matrix in the row?""
+
 <h2>HOW TO DO FOR COMPILER THE CODE THIS PROJECT</h2>
 
 This project use the Make file for compiler all files that have function

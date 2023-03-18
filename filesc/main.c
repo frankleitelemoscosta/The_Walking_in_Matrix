@@ -5,92 +5,91 @@
 #include <ctype.h>
 
 int main() {
-    //variaveis de ambiente
-        signed int quantidadeMatrizes = 1;
-        Matriz Matriz;
-        int contador = 0;
-        signed int parada = 1;
-        int *vetor;
-        signed int linhas;
-        signed int colunas;
-        int CasasDoVetor;
-        char opcao; 
-        signed int contador_aux;
+    //environment variables
+        signed int numberMatrices = 1;
+        Matriz Matrix;
+        int Counter = 0;
+        signed int stop = 1;
+        int *vet;
+        signed int Rows;
+        signed int Colunms;
+        int HousesOfvet;
+        char option; 
+        signed int Counter_aux;
         signed int initRow;
         signed int initColunm;
-        int soma;
-    //fim das variaveis de ambiente
+        int sum;
+    //finish the environment variables
     
-    opcao = 'P';//inicializando a variavel
+    option = 'P';//init the variable
 
-    //escrevendo o arquivo
-        SetMatrizSize();
-        for (int i = 0; i < quantidadeMatrizes; i++)
+    //write the file
+        SetMatrixSize();
+        for (int i = 0; i < numberMatrices; i++)
         {
-            SaveMatriz(&Matriz);
+            SaveMatrix(&Matrix);
         }
-    //fim da escrita
+    //finish the write
 
-    //abrindo o arquivo para retirar as matrizes
+    //open the file to remove the matrices
         FILE *file;
 
         file = fopen("dados.data","r");
         if(file == NULL){
             printf("This is not open!");
-            return 1;//vai apenas encerrar o programa e retornar o valor 1 identificando o erro
+            return 1;//finish the program and return the value 1
         }
-    //fim do procedimento, arquivo aberto para extração de informações
+    //finish the procedure
 
-    //pegando o numero de linhas e colunas
-        while(parada != 0){
-
-            //para pegar o tamanho da matriz
-                if(contador < 1){
-                    while(fscanf(file,"%d",&linhas) == 1)
+    //catch the number of Rows and Colunms
+        while(stop != 0){
+            //for catch the size of the matrix
+                if(Counter < 1){
+                    while(fscanf(file,"%d",&Rows) == 1)
                     {
-                        contador ++;
-                        if(contador == 2)
+                        Counter ++;
+                        if(Counter == 2)
                         {
                             break;
                         }
                     }
-                    colunas = linhas;
-                    CasasDoVetor = pow(linhas,2);
+                    Colunms = Rows;
+                    HousesOfvet = pow(Rows,2);
                 }
-            //fim da coleta de informações
+            //end of information collection
 
             break;
         }
-    //fim da coleta de dados
+    //end of the collection of data
 
-    //alocação do vetor
-        vetor = (int *)malloc((CasasDoVetor * quantidadeMatrizes) * sizeof(int));
-    //fim da alocação
+    //vet allocation
+        vet = (int *)malloc((HousesOfvet * numberMatrices) * sizeof(int));
+    //end alocation
 
-    //preenchendo o vetor
-        for(int i = 0 ; i < (CasasDoVetor * quantidadeMatrizes); i++){
-            fscanf(file,"%d",&vetor[i]);
+    // filling in the vet
+        for(int i = 0 ; i < (HousesOfvet * numberMatrices); i++){
+            fscanf(file,"%d",&vet[i]);
         }
-    //fim do preenchimento
+    //end the filling
 
-    //fechando o arquivo
+    //close file
         fclose(file);
-    //fim do fechamento
+    //end close
 
-    contador = 0;//reiniciando o contador para que seja possível usar esta mesma variavel
-    soma = 0;
-    contador_aux = 0;
+    Counter = 0;//restart the Counter for that possible use be variable
+    sum = 0;
+    Counter_aux = 0;
 
-    //preenchimento da matriz
-    while(parada !=0)
+    //filling in and search the bigger element in the matrix
+    while(stop !=0)
     {
-        //preenchendo a matriz com as informações do arquivo
-            contador = FillingTheMatriz(&Matriz,vetor,contador);
-        //fim do preenchimento
+        //filling in the matrix with the informations of the data file
+            Counter = FillingTheMatriz(&Matrix,vet,Counter);
+        //end procedure
             
         //enumeration matrix
-            contador_aux++;
-        //finhish this operator
+            Counter_aux++;
+        //finish this operator
 
         printf("You want init the walking in the matrix in the row?");
         scanf("%d",&initRow);
@@ -98,28 +97,28 @@ int main() {
         printf("You want init the walking in the matrix in the colunm?");
         scanf("%d",&initColunm);
 
-        printf("init this program with the [%d]° matrix in the row [%d] and colunm [%d]\nnow this program will walkin to position that will have the bigger element\n",contador_aux,initRow,initColunm);
+        printf("init this program with the [%d]° matrix in the row [%d] and colunm [%d]\nnow this program will walkin to position that will have the bigger element\n",Counter_aux,initRow,initColunm);
 
-        SearchingTheBiggerElement(&Matriz,initColunm,initRow,&soma);
+        SearchingTheBiggerElement(&Matrix,initColunm,initRow,&sum);
 
-        printf("A soma dos elementos da matriz é: (%d)\n",soma);
+        printf("The sum of the elements of the matrix is: (%d)\n",sum);
 
 
         //for print matrix and ask if the user want finish this program
-            while( opcao!='N' &&  opcao!='S' ){
+            while( option!='N' &&  option!='S' ){
                 
                 //para printar a matriz
-                    PrintMatrix(&Matriz);
+                    PrintMatrix(&Matrix);
                 //finish
 
-                printf("You want change the constitution of the matrix?[S/N],this is matrix number [%d], if don´t this program will be close\n",contador_aux);
-                scanf(" %c",&opcao);
-                opcao = toupper(opcao);//garantindo que a resposta será uma letra maiuscula
+                printf("You want change the constitution of the matrix?[S/N],this is matrix number [%d], if don´t this program will be close\n",Counter_aux);
+                scanf(" %c",&option);
+                option = toupper(option);//garantindo que a resposta será uma letra maiuscula
             }
         //finish this operator
 
-        if(opcao == 'N')break;//finish the while
-        opcao = 'p';
+        if(option == 'N')break;//finish the while
+        option = 'p';
     }
 
     

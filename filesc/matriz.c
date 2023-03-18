@@ -11,7 +11,7 @@ void GeneretaMatrizValues(Matriz *matriz)
     }
 }
 
-void SetMatrizSize(){
+void SetMatrixSize(){
     FILE *file;
 
     file = fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.data","w");
@@ -25,7 +25,7 @@ void SetMatrizSize(){
     fclose(file);
 }//esse método é chamado apenas uma vez
 
-void SaveMatriz(Matriz *matriz)
+void SaveMatrix(Matriz *matriz)
 {
     FILE *file;
 
