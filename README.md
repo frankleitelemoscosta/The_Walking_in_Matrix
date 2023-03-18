@@ -60,9 +60,11 @@ When write the make comand:
 ![](https://user-images.githubusercontent.com/107070061/226111053-a048662f-333f-468f-91b8-5c5653f88efa.png)
 
 Before the comand make:
+
 ![](https://user-images.githubusercontent.com/107070061/226111124-dbd1bd0e-a91c-40d8-8850-b491515baec6.png)
 
 After the comand make:
+
 ![](https://user-images.githubusercontent.com/107070061/226111168-c0c2a98b-eb4d-4dcc-b414-b7d4ab07f1cc.png)
 
 
