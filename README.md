@@ -47,4 +47,23 @@ know how this project works,look:
 
 ![](https://user-images.githubusercontent.com/107070061/226108916-b37c30be-d111-4ec2-9d4a-1e01bd3901ed.gif)
 
+The first comand compiler the code and used the comand with "gcc", this is 
+happend because the Make file is just a list of comands that required when 
+their comands are write in the terminal, this means that you can open the
+make file catch the comand wrote and put in terminal and click enter that
+will happend the compiler and execute and remove the executable. Each comand
+will do a action,the make compiler, and make run execute the executable that
+was generated when the comand make wrote in terminal, and the make clean
+clean the executable the files of the project, they are:
+
+When write the make comand:
+![](https://user-images.githubusercontent.com/107070061/226111053-a048662f-333f-468f-91b8-5c5653f88efa.png)
+
+Before the comand make:
+![](https://user-images.githubusercontent.com/107070061/226111124-dbd1bd0e-a91c-40d8-8850-b491515baec6.png)
+
+After the comand make:
+![](https://user-images.githubusercontent.com/107070061/226111168-c0c2a98b-eb4d-4dcc-b414-b7d4ab07f1cc.png)
+
+
 
