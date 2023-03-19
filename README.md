@@ -45,7 +45,7 @@ stages, they are:
 
 <ul>
   <li>Compilation</li>
-  <li>Execution</li>
+  <li>Information Processing</li>
   <li>Results</li>
 </ul>
 
@@ -57,7 +57,7 @@ the program look:
 
 ![](https://user-images.githubusercontent.com/107070061/226108916-b37c30be-d111-4ec2-9d4a-1e01bd3901ed.gif)
 
-<h3>EXECUTION</h3>
+<h3>INFORMATION PROCESSING</h3>
 
 After this procedure the compiler read a main, where the first comand is open
 and write the file data that not have the matrix for walking, in this moment
@@ -96,9 +96,41 @@ In short in this moment happend three things:
   <li>Filling in the vector</li>
 </ul>
 
+Recovery the size matrix:
+
+The recovery the size matrix happend per a open the data file, and read the first
+row, and stop the read with the break, because in this while not filling the vector
+and just filling in the variables Row and Colunm.
+
+Alocation the vector:
+
+The vector is alocated with the use of the variable Row, the matrix of the program
+every is square, so was possible use the pow function of the librari math for have
+the total number of elements, and use too the malloc function for accomplish the 
+alocation.
+
+Filling in the vector:
+
+For filling in the vector was used the fscanf and after this vector use for filling
+the matrix when solicited for user.
+
+After the compiler into to the while where the filling in matrix and the walking 
+happend.
+
 When the compiler is in the while where the change and walking happend you will
 see the question: "You want init the walking in the matrix in the row?" and the
 question: "You want init the walking in the matrix in the colunm?"
+
+This is happend after the filling in the matrix, where a counter will forward 
+for acess the houses of vector and atribuation to matrix, what happend is that
+each stage that this function is open the counter stop where star other matrix,
+and this way every acess this function the matrix will filling in with a new 
+numbers.
+
+The function:
+
+![](https://user-images.githubusercontent.com/107070061/226183797-ab0bd994-0470-4174-9e1e-879626d951f1.png)
+
 
 <h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
 
