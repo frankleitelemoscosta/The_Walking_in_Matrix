@@ -93,9 +93,11 @@ void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int init
 
     Row = initRow;
     Colunm = initColunm;
-
-    *soma += matrix->Matrix[Row][Colunm].value;
-    matrix->Matrix[Row][Colunm].value = 0;
+    
+    //start sum
+        *soma += matrix->Matrix[Row][Colunm].value;
+        matrix->Matrix[Row][Colunm].value = 0;
+    
 
     while(stop != 1){
 

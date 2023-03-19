@@ -131,6 +131,13 @@ The function:
 
 ![](https://user-images.githubusercontent.com/107070061/226183797-ab0bd994-0470-4174-9e1e-879626d951f1.png)
 
+Later the two start questions the function "SearchingTheBiggerElement" is called
+and start the walking per matrix, look:
+
+![](https://user-images.githubusercontent.com/107070061/226205746-e24152ef-b361-4a71-b179-a39ebd03aac4.png)
+
+
+<h3>RESULTS</h3>
 
 <h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
 
