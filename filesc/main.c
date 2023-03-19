@@ -6,8 +6,8 @@
 
 int main() {
     //environment variables
-        signed int numberMatrices = 1;
-        Matriz Matrix;
+        signed int numberMatrices = 50;
+        Matrix Matrix;
         int Counter = 0;
         signed int stop = 1;
         int *vet;
@@ -84,7 +84,7 @@ int main() {
     while(stop !=0)
     {
         //filling in the matrix with the informations of the data file
-            Counter = FillingTheMatriz(&Matrix,vet,Counter);
+            Counter = FillingTheMatrix(&Matrix,vet,Counter);
         //end procedure
             
         //enumeration matrix
@@ -117,7 +117,11 @@ int main() {
             }
         //finish this operator
 
-        if(option == 'N')break;//finish the while
+        if(option == 'N'){
+            free(vet);
+            break;
+            }//finish the while
+        sum = 0;
         option = 'p';
     }
 

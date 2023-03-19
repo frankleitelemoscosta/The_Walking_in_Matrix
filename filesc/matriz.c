@@ -1,12 +1,12 @@
 #include "/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/filesh/matriz.h"
 
-void GeneretaMatrizValues(Matriz *matriz)
+void GeneretaMatrixValues(Matrix *matrix)
 {
     for(int i = 0 ; i < rows ; i++)
     {
         for (int j = 0; j < columns; j++)
         {
-            matriz->Matriz[i][j].valor = rand()%99;//preencher a matriz
+            matrix->Matrix[i][j].value = rand()%100;//filling in the matrix
         }
     }
 }
@@ -25,7 +25,7 @@ void SetMatrixSize(){
     fclose(file);
 }//esse método é chamado apenas uma vez
 
-void SaveMatrix(Matriz *matriz)
+void SaveMatrix(Matrix *matrix)
 {
     FILE *file;
 
@@ -35,14 +35,14 @@ void SaveMatrix(Matriz *matriz)
         return ;//vai apenas encerrar o programa
     }
 
-    GeneretaMatrizValues(matriz);//preenchendo a matriz criada na main
+    GeneretaMatrixValues(matrix);//preenchendo a matrix criada na main
 
     //escrevendo no arquivo
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < columns; j++)
             {
-                fprintf(file,"%d ",matriz->Matriz[i][j].valor);
+                fprintf(file,"%d ",matrix->Matrix[i][j].value);
             }
             fprintf(file,"\n");
         }
@@ -52,28 +52,28 @@ void SaveMatrix(Matriz *matriz)
 
 }
 
-int FillingTheMatriz(Matriz *matriz,int *vetor,int contador){
+int FillingTheMatrix(Matrix *matrix,int *vetor,int counter){
 
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < columns; j++)
         {
-            matriz->Matriz[i][j].valor = vetor[contador];
-            contador++;
+            matrix->Matrix[i][j].value = vetor[counter];
+            counter++;
         }
         
     }
-    return contador;
+    return counter;
 }
 
-void PrintMatrix(Matriz *matriz){
+void PrintMatrix(Matrix *matrix){
 
     //para apresentar os componentes ao usuario
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < columns; j++)
             {
-                printf("[ %d ]",matriz->Matriz[i][j].valor);
+                printf("[ %d ]",matrix->Matrix[i][j].value);
             }
             printf("\n");
         }
@@ -82,7 +82,7 @@ void PrintMatrix(Matriz *matriz){
 }
 
 
-void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int initColunm, signed int *soma)
+void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int initColunm, signed int *soma)
 {
     //variables of ambience    
         signed int stop = 0;
@@ -94,30 +94,34 @@ void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int init
     Row = initRow;
     Colunm = initColunm;
 
-    *soma += matriz->Matriz[Row][Colunm].valor;
+    *soma += matrix->Matrix[Row][Colunm].value;
+    matrix->Matrix[Row][Colunm].value = 0;
 
     while(stop != 1){
 
         //to check the houses around where Jack is
-        ((Row + 1) < rows) ? ((matriz->Matriz[Row + 1][Colunm].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm].valor):(printf(" "))):(printf("Jack esta na ultima linha"));
-        ((Colunm + 1) < columns) ? ((matriz->Matriz[Row][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row][Colunm + 1].valor):(printf(" "))):(printf("Jack esta na ultima coluna\n"));
-        ((Colunm + 1) < columns && (Row + 1) < rows) ? ((matriz->Matriz[Row + 1][Colunm + 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row + 1][Colunm + 1].valor):(printf(" "))):(printf("Jack esta prestes a cair fora\n"));
-        ((Colunm - 1) > (-1)) ? ((matriz->Matriz[Row][Colunm - 1].valor > Bigger) ? (Bigger = matriz->Matriz[Row][Colunm - 1].valor) : (Bigger = Bigger)) : (printf(" "));
+        ((Row + 1) < rows) ? ((matrix->Matrix[Row + 1][Colunm].value > Bigger) ? (Bigger = matrix->Matrix[Row + 1][Colunm].value):(printf(" "))):(printf(" "));
+        ((Colunm + 1) < (columns - 1)) ? ((matrix->Matrix[Row][Colunm + 1].value > Bigger) ? (Bigger = matrix->Matrix[Row][Colunm + 1].value):(printf(" "))):(printf(" "));
+        ((Colunm + 1) < (columns - 1) && (Row + 1) < rows) ? ((matrix->Matrix[Row + 1][Colunm + 1].value > Bigger) ? (Bigger = matrix->Matrix[Row + 1][Colunm + 1].value):(printf(" "))):(printf(" "));
+        ((Colunm - 1) > (-1)) ? ((matrix->Matrix[Row][Colunm - 1].value > Bigger) ? (Bigger = matrix->Matrix[Row][Colunm - 1].value) : (Bigger = Bigger)) : (printf(" "));
+        ((Colunm - 1) > (-1) && (Row + 1) < (rows - 1)) ? ((matrix->Matrix[Row + 1][Colunm - 1].value > Bigger) ? (Bigger = matrix->Matrix[Row + 1][Colunm - 1].value) : (Bigger = Bigger)) : (printf(" "));
         //finish the check
 
-        (matriz->Matriz[Row + 1][Colunm].valor == Bigger) ? ( *soma += matriz->Matriz[Row + 1][Colunm].valor ,matriz->Matriz[Row + 1][Colunm].valor = 0, Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
-        (matriz->Matriz[Row][Colunm + 1].valor == Bigger) ? ( *soma += matriz->Matriz[Row][Colunm + 1].valor ,matriz->Matriz[Row][Colunm + 1].valor = 0, Colunm = Colunm + 1 ) : ( Bigger = Bigger );//one Colunm the right
-        (matriz->Matriz[Row + 1][Colunm + 1].valor == Bigger) ? ( *soma += matriz->Matriz[Row + 1][Colunm + 1].valor ,matriz->Matriz[Row + 1][Colunm + 1].valor = 0, Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
-        (matriz->Matriz[Row][Colunm - 1].valor == Bigger) ? ( *soma += matriz->Matriz[Row][Colunm - 1].valor ,matriz->Matriz[Row][Colunm - 1].valor = 0, Colunm = Colunm - 1) : ( Bigger = Bigger );
+        (matrix->Matrix[Row + 1][Colunm].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row + 1][Colunm].value ,matrix->Matrix[Row + 1][Colunm].value = 0, Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
+        (matrix->Matrix[Row][Colunm + 1].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row][Colunm + 1].value ,matrix->Matrix[Row][Colunm + 1].value = 0, Colunm = Colunm + 1 ) : ( Bigger = Bigger );//one Colunm the right
+        (matrix->Matrix[Row + 1][Colunm + 1].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row + 1][Colunm + 1].value ,matrix->Matrix[Row + 1][Colunm + 1].value = 0, Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
+        (matrix->Matrix[Row][Colunm - 1].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row][Colunm - 1].value ,matrix->Matrix[Row][Colunm - 1].value = 0, Colunm = Colunm - 1) : ( Bigger = Bigger );
+        (matrix->Matrix[Row + 1][Colunm - 1].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row + 1][Colunm - 1].value ,matrix->Matrix[Row + 1][Colunm - 1].value = 0, Colunm = Colunm - 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
 
-        (Row == rows) ? (*soma += matriz->Matriz[Row][Colunm + 1].valor , Colunm = Colunm + 1) : (Row = Row);//for to check if the jack is in the last row
+        (Row == (rows - 1)) ? (*soma += matrix->Matrix[Row][Colunm + 1].value , matrix->Matrix[Row][Colunm + 1].value = 0, Colunm = Colunm + 1) : (Row = Row);//for to check if the jack is in the last row
 
-        printf("%d ",Bigger);
-        getchar();
-
+        /*
+            printf("%d\n ",Bigger);
+            getchar();
+        */
         Bigger = 0;
 
-        (Row == (rows-1) && Colunm == (columns-1)) ? (stop = 1) : (stop = stop);
+        (Row == (rows-1) && Colunm == (columns - 1)) ? (stop = 1) : (stop = stop);
 
     }
 }

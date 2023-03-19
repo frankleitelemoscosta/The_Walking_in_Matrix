@@ -7,7 +7,7 @@ any position of the matrix and he will walking per it for the houses with
 the bigger element, and for that it´s necessary to make different checks 
 in the positions of the matrix, checks in right or down or in the diagonally 
 or back one position, and after go to the position that have the bigger 
-element between the four options, this is a greedy method. 
+element between the five options, this is a greedy method. 
 
 <h3>THE GREEDY METHOD</h3>
 
@@ -16,7 +16,7 @@ best options and it´s not important if this is good or bad in the future,
 in other words the greedy method make the best select in each stage with 
 base in the informations provided in that stage. He can used when you 
 need check the best possible the each interaction. Here the method is 
-used for select the bigger number between four option in each stage and
+used for select the bigger number between five option in each stage and
 sum the selected element and recorde in the variable Bigger 
 
 <h3>THE WALKING IN A MATRIX</h3>
@@ -25,7 +25,7 @@ This project use the walking in a matrix, because is necessary sum all bigger
 numbers and show the result in the finish of the walking. this implemetation happend
 whit a while that have like stop a one variable that not change while the jack 
 no arrive the last position of the matrix, and while this loop is executed into
-in four beguiner checks construed with four ternary operators,it´s other way
+in five beguiner checks construed with five ternary operators,it´s other way
 of use "if" and "else", but, what happend when into in this a function? what happend
 is the acess the adress in the houses around the current house and check if the
 variable Bigger that in init execution the "SearchingTheBiggerElement" function
@@ -72,16 +72,33 @@ Insert elements in the matrix:
 
 ![](https://user-images.githubusercontent.com/107070061/226119230-e25537be-8889-48f3-a903-aea7a2b00a11.gif)
 
+This insertion happend with use the function "GeneretaMatrixValues", this 
+function filling in the matrix of the struct Matrix with random values with
+the used the function "rand()" of the C programming lenguage with values between
+0-99, this interval was selected because it´s not good have the big values for 
+sum.
+
 Later the compiler open again the data file and read the first matrix recorded 
-in this file, and this can seem repetitive and wrong, but no because in the moment
-of recorde matrix in the data file is used just one matrix and 
+in this file, and this can seem repetitive and wrong, but no because in the 
+moment of recorde matrix in the data file is used just one matrix and when add
+the more of one matrix, and the matrix will be with the last matrix generated
+per the program. With the file open the read all matrix and recorde in a vector.
 
-First procedure:
+Location where this procedure happend in the code:
 
+![](https://user-images.githubusercontent.com/107070061/226176085-0af7bd17-4338-4595-b55d-43144b327a1f.png)
 
+In short in this moment happend three things:
 
-After this procedure the program init and the first, you will see the question:
-""You want init the walking in the matrix in the row?""
+<ul>
+  <li>Recovery the size of matrix</li>
+  <li>Alocation the vector</li>
+  <li>Filling in the vector</li>
+</ul>
+
+When the compiler is in the while where the change and walking happend you will
+see the question: "You want init the walking in the matrix in the row?" and the
+question: "You want init the walking in the matrix in the colunm?"
 
 <h2>HOW TO DO FOR COMPILER THE CODE THIS PROJECT</h2>
 
@@ -102,6 +119,7 @@ was generated when the comand make wrote in terminal, and the make clean
 clean the executable the files of the project, they are:
 
 When write the make comand:
+
 ![](https://user-images.githubusercontent.com/107070061/226111053-a048662f-333f-468f-91b8-5c5653f88efa.png)
 
 Before the comand make:

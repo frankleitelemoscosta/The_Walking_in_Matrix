@@ -1,36 +1,36 @@
-//para o compilador identificar que este arquivo foi compilado
+//for the compiler to identify that this file was compiled
     #ifndef MATRIZ_H
     #define MATRIZ_H
-//fim
+//end
 
-//bibliotecas
+//libraries
     #include<stdio.h>
     #include<stdlib.h>
-//fim bibliotecas
+//end libraries
 
 
-#define rows 2
-#define columns 2
+#define rows 4
+#define columns 4
 
-//compenentes da matriz
+//components of the matrix
     typedef struct Item{
-        int valor;
+        int value;
     }Item;
-//fim dos componentes
+//end of the components
 
-//matriz do tipo dos itens
-    typedef struct Matriz{
-        Item Matriz[rows][columns];
-    }Matriz;
-//fim da matriz
+//matrix of the Item type
+    typedef struct Matrix{
+        Item Matrix[rows][columns];
+    }Matrix;
+//end of the matrix
 
-//métodos referentes as duas estruturas
-    void GeneretaMatrizValues(Matriz *matriz);//esse métodos serve para gerar valores para compor a matriz
-    void SetMatrizSize();//esse métodos serve para salvar no arquivo o tamanho da matriz
-    void SaveMatriz(Matriz *matriz);//esse método serve para escrever a matriz no arquivo
-    int FillingTheMatriz(Matriz *matriz,int *vetor,int contador);
-    void PrintMatrix(Matriz *matriz);//esse método é utilizado estritamente para imprimir a matriz
-    void SearchingTheBiggerElement(Matriz *matriz,signed int initRow,signed int initColunm, signed int *soma);
-//fim dos métodos ou funções
+//methods referring to the two structures
+    void GeneretaMatrixValues(Matrix *matrix);//this method serves to generate values ​​to compose the matrix
+    void SetMatrixSize();//this method serves to save the size of the matrix in the file
+    void SaveMatrix(Matrix *matrix);//this method serves to write the matrix in the file
+    int FillingTheMatrix(Matrix *matrix,int *vetor,int counter);
+    void PrintMatrix(Matrix *matrix);//this method is used strictly to print the matrix
+    void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int initColunm, signed int *sum);
+//end of methods or functions
 
 #endif
