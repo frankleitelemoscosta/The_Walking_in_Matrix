@@ -49,9 +49,9 @@ stages, they are:
   <li>Results</li>
 </ul>
 
-<h3>COMPILER</h3>
+<h3>COMPILATION</h3>
 
-The compiler is the first thing for you execute and happend for program init,
+The compiler is the first thing for you execute and happend for start the program,
 for this you write make in terminal and after you write make run for execute
 the program look:
 
