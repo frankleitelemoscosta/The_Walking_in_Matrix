@@ -44,7 +44,7 @@ Here you will see the program and your execution, that is divide in three visual
 stages, they are:
 
 <ul>
-  <li>Compiler</li>
+  <li>Compilation</li>
   <li>Execution</li>
   <li>Results</li>
 </ul>
@@ -100,7 +100,7 @@ When the compiler is in the while where the change and walking happend you will
 see the question: "You want init the walking in the matrix in the row?" and the
 question: "You want init the walking in the matrix in the colunm?"
 
-<h2>HOW TO DO FOR COMPILER THE CODE THIS PROJECT</h2>
+<h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
 
 This project use the Make file for compiler all files that have function
 for operation in the all executions for walking in the matrix and sum the
@@ -109,11 +109,11 @@ know how this project works,look:
 
 ![](https://user-images.githubusercontent.com/107070061/226108916-b37c30be-d111-4ec2-9d4a-1e01bd3901ed.gif)
 
-The first comand compiler the code and used the comand with "gcc", this is 
+The first comand compile the code and used the comand with "gcc", this is 
 happend because the Make file is just a list of comands that required when 
 their comands are write in the terminal, this means that you can open the
 make file catch the comand wrote and put in terminal and click enter that
-will happend the compiler and execute and remove the executable. Each comand
+will happend the compile and execute and remove the executable. Each comand
 will do a action,the make compiler, and make run execute the executable that
 was generated when the comand make wrote in terminal, and the make clean
 clean the executable the files of the project, they are:
