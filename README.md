@@ -38,7 +38,7 @@ will select the bigger numbers and sum with the last bigger number that sumed
 the variable sum that in the predecessor execution of the loop with check the
 houses around the where jack be in the 
 
-<h2>ONE EXAMPLE OF COMPILER PROGRAM AND EXPLANATIONS ABOUT PROJECT</h2>
+<h2>ONE EXAMPLE OF COMPILE PROGRAM AND EXPLANATIONS ABOUT PROJECT</h2>
 
 Here you will see the program and your execution, that is divide in three visual
 stages, they are:
