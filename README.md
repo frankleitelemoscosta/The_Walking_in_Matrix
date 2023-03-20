@@ -1,4 +1,4 @@
-<h1>The_Walking_in_Matrix</h1>
+<h1>The_Walking_in_a_Matrix</h1>
 
 <h2>THE PROBLEM</h2>
 
@@ -9,7 +9,7 @@ in the positions of the matrix, checks in right or down or in the diagonally
 or back one position, and after go to the position that have the bigger 
 element between the five options, this is a greedy method. 
 
-<h3>THE GREEDY METHOD</h3>
+<h3>Greedy Algorithm</h3>
 
 This method check all options that you have in the moment and select the 
 best options and it´s not important if this is good or bad in the future, 
@@ -19,7 +19,7 @@ need check the best possible the each interaction. Here the method is
 used for select the bigger number between five option in each stage and
 sum the selected element and recorde in the variable Bigger 
 
-<h3>THE WALKING IN A MATRIX</h3>
+<h3>The walking in a Matrix</h3>
 
 This project use the walking in a matrix, because is necessary sum all bigger
 numbers and show the result in the finish of the walking. this implemetation happend
