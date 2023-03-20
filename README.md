@@ -96,36 +96,38 @@ In short in this moment happend three things:
   <li>Filling in the vector</li>
 </ul>
 
-Recovery the size matrix:
+<ul>
+  <li>Recovery the size matrix:</li>
+</ul>
 
 The recovery the size matrix happend per a open the data file, and read the first
 row, and stop the read with the break, because in this while not filling the vector
 and just filling in the variables Row and Colunm.
 
-Alocation the vector:
+<ul>
+  <li>Alocation the vector:</li>
+</ul>
 
 The vector is alocated with the use of the variable Row, the matrix of the program
 every is square, so was possible use the pow function of the librari math for have
 the total number of elements, and use too the malloc function for accomplish the 
 alocation.
 
-Filling in the vector:
+<ul>
+  <li>Filling in the vector:</li>
+</ul>
 
 For filling in the vector was used the fscanf and after this vector use for filling
 the matrix when solicited for user.
 
 After the compiler into to the while where the filling in matrix and the walking 
-happend.
-
-When the compiler is in the while where the change and walking happend you will
+happend.When the compiler is in the while where the change and walking happend you will
 see the question: "You want init the walking in the matrix in the row?" and the
-question: "You want init the walking in the matrix in the colunm?"
-
-This is happend after the filling in the matrix, where a counter will forward 
-for acess the houses of vector and atribuation to matrix, what happend is that
-each stage that this function is open the counter stop where star other matrix,
-and this way every acess this function the matrix will filling in with a new 
-numbers.
+question: "You want init the walking in the matrix in the colunm?".This is happend
+after the filling in the matrix, where a counter will forward for acess the houses
+of vector and atribuation to matrix, what happend is that each stage that this 
+function is open the counter stop where star other matrix, and this way every 
+acess this function the matrix will filling in with a new numbers.
 
 The function:
 
@@ -136,6 +138,14 @@ and start the walking per matrix, look:
 
 ![](https://user-images.githubusercontent.com/107070061/226205746-e24152ef-b361-4a71-b179-a39ebd03aac4.png)
 
+In this moment we have four procedure happening:
+
+<ul>
+  <li>Receiving parameters</li>
+  <li>Check the neighbors</li>
+  <li>Change the position of the Jack</li>
+  <li>Sum of selected elements</li>
+</ul>
 
 <h3>RESULTS</h3>
 
