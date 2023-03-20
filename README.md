@@ -49,7 +49,7 @@ stages, they are:
   <li>Results</li>
 </ul>
 
-<h3>COMPILATION</h3>
+<h3>Compilation</h3>
 
 The compiler is the first thing for you execute and happend for start the program,
 for this you write make in terminal and after you write make run for execute
@@ -57,7 +57,7 @@ the program look:
 
 ![](https://user-images.githubusercontent.com/107070061/226108916-b37c30be-d111-4ec2-9d4a-1e01bd3901ed.gif)
 
-<h3>INFORMATION PROCESSING</h3>
+<h3>Information Processing</h3>
 
 After this procedure the compiler read a main, where the first comand is open
 and write the file data that not have the matrix for walking, in this moment
@@ -147,7 +147,7 @@ In this moment we have four procedure happening:
   <li>Sum of selected elements</li>
 </ul>
 
-<h3>RESULTS</h3>
+<h3>Results</h3>
 
 <h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
 
