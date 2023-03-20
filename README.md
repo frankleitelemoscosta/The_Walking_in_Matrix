@@ -148,13 +148,34 @@ In this moment we have four procedure happening:
 </ul>
 
 <ul>
-  <li>Receive parameters:</li>
+  <li>Receiving parameters:</li>
 </ul>
 
 The first stage is the pass to function the parameters in the main, look:
 
 ![](https://user-images.githubusercontent.com/107070061/226407229-337bbf41-c67c-4d45-8b5c-39ae8607caa6.png)
 
+this parameters are: one variable of the type Matrix struct, start row and
+colunm, and the last parameter is a varable that recorde the sum of the big
+numbers along the way of the Jack. 
+
+When this variable arrive in the function will have this uses:
+
+![](https://user-images.githubusercontent.com/107070061/226456540-103ab10b-20ae-408f-8810-2e30b4ec428f.png)
+
+Watch that four variables was added in the function and two variables received
+the start row and start colunm, because is necessary change the variable in each 
+iteration, and the two first operation are performed because for the start position
+have means in the finish procedure
+
+<ul>
+  <li>Check the neighbors:</li>
+</ul>
+
+Later the received the compiler into to while that start the search in the matrix,
+look:
+
+![](https://user-images.githubusercontent.com/107070061/226456408-a04dd628-f39a-4910-9428-5086a03845a9.png)
 
 <h3>Results</h3>
 

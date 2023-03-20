@@ -35,7 +35,7 @@ void SaveMatrix(Matrix *matrix)
         return ;//vai apenas encerrar o programa
     }
 
-    GeneretaMatrixValues(matrix);//preenchendo a matrix criada na main
+    GeneretaMatrixValues(matrix);//filling in the matrix created in the file main
 
     //escrevendo no arquivo
         for (int i = 0; i < rows; i++)
@@ -82,7 +82,7 @@ void PrintMatrix(Matrix *matrix){
 }
 
 
-void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int initColunm, signed int *soma)
+void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int initColunm, signed int *sum)
 {
     //variables of ambience    
         signed int stop = 0;
@@ -95,7 +95,7 @@ void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int init
     Colunm = initColunm;
     
     //start sum
-        *soma += matrix->Matrix[Row][Colunm].value;
+        *sum += matrix->Matrix[Row][Colunm].value;
         matrix->Matrix[Row][Colunm].value = 0;
     
 
@@ -109,13 +109,13 @@ void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int init
         ((Colunm - 1) > (-1) && (Row + 1) < (rows - 1)) ? ((matrix->Matrix[Row + 1][Colunm - 1].value > Bigger) ? (Bigger = matrix->Matrix[Row + 1][Colunm - 1].value) : (Bigger = Bigger)) : (printf(" "));
         //finish the check
 
-        (matrix->Matrix[Row + 1][Colunm].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row + 1][Colunm].value ,matrix->Matrix[Row + 1][Colunm].value = 0, Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
-        (matrix->Matrix[Row][Colunm + 1].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row][Colunm + 1].value ,matrix->Matrix[Row][Colunm + 1].value = 0, Colunm = Colunm + 1 ) : ( Bigger = Bigger );//one Colunm the right
-        (matrix->Matrix[Row + 1][Colunm + 1].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row + 1][Colunm + 1].value ,matrix->Matrix[Row + 1][Colunm + 1].value = 0, Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
-        (matrix->Matrix[Row][Colunm - 1].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row][Colunm - 1].value ,matrix->Matrix[Row][Colunm - 1].value = 0, Colunm = Colunm - 1) : ( Bigger = Bigger );
-        (matrix->Matrix[Row + 1][Colunm - 1].value == Bigger && Row < (rows - 1)) ? ( *soma += matrix->Matrix[Row + 1][Colunm - 1].value ,matrix->Matrix[Row + 1][Colunm - 1].value = 0, Colunm = Colunm - 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
+        (matrix->Matrix[Row + 1][Colunm].value == Bigger && Row < (rows - 1)) ? ( *sum += matrix->Matrix[Row + 1][Colunm].value ,matrix->Matrix[Row + 1][Colunm].value = 0, Row = Row + 1 ) : ( Bigger = Bigger);//one Row the down
+        (matrix->Matrix[Row][Colunm + 1].value == Bigger && Row < (rows - 1)) ? ( *sum += matrix->Matrix[Row][Colunm + 1].value ,matrix->Matrix[Row][Colunm + 1].value = 0, Colunm = Colunm + 1 ) : ( Bigger = Bigger );//one Colunm the right
+        (matrix->Matrix[Row + 1][Colunm + 1].value == Bigger && Row < (rows - 1)) ? ( *sum += matrix->Matrix[Row + 1][Colunm + 1].value ,matrix->Matrix[Row + 1][Colunm + 1].value = 0, Colunm = Colunm + 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
+        (matrix->Matrix[Row][Colunm - 1].value == Bigger && Row < (rows - 1)) ? ( *sum += matrix->Matrix[Row][Colunm - 1].value ,matrix->Matrix[Row][Colunm - 1].value = 0, Colunm = Colunm - 1) : ( Bigger = Bigger );
+        (matrix->Matrix[Row + 1][Colunm - 1].value == Bigger && Row < (rows - 1)) ? ( *sum += matrix->Matrix[Row + 1][Colunm - 1].value ,matrix->Matrix[Row + 1][Colunm - 1].value = 0, Colunm = Colunm - 1, Row = Row + 1 ) : ( Bigger = Bigger );//in the diagonally
 
-        (Row == (rows - 1)) ? (*soma += matrix->Matrix[Row][Colunm + 1].value , matrix->Matrix[Row][Colunm + 1].value = 0, Colunm = Colunm + 1) : (Row = Row);//for to check if the jack is in the last row
+        (Row == (rows - 1)) ? (*sum += matrix->Matrix[Row][Colunm + 1].value , matrix->Matrix[Row][Colunm + 1].value = 0, Colunm = Colunm + 1) : (Row = Row);//for to check if the jack is in the last row
 
         /*
             printf("%d\n ",Bigger);
@@ -123,7 +123,7 @@ void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int init
         */
         Bigger = 0;
 
-        (Row == (rows-1) && Colunm == (columns - 1)) ? (stop = 1) : (stop = stop);
+        (Row == (rows-1) && Colunm == (columns - 1)) ? (stop = 1) : (stop = stop);//stop the search
 
     }
 }
