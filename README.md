@@ -144,7 +144,13 @@ and start the walking per matrix, look:
 This project use the Make file for compiler all files that have function
 for operation in the all executions for walking in the matrix and sum the
 elements, these are the pictures for you to understand how compiler and
-know how this project works,look:
+know how this project works that are divide in three parts,look:
+
+<ul>
+  <li>Compilation</li>
+  <li>Execution</li>
+  <li>Clean executable</li>
+</ul>
 
 ![](https://user-images.githubusercontent.com/107070061/226108916-b37c30be-d111-4ec2-9d4a-1e01bd3901ed.gif)
 
