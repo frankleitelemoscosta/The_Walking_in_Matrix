@@ -7,7 +7,7 @@ any position of the matrix and he will walking per it for the houses with
 the bigger element, and for that it´s necessary to make different checks 
 in the positions of the matrix, checks in right or down or in the diagonally 
 or back one position, and after go to the position that have the bigger 
-element between the five options, this is a greedy method. 
+element between the five options, this is a greedy algorithm. 
 
 <h3>Greedy Algorithm</h3>
 
@@ -17,7 +17,7 @@ in other words the greedy method make the best select in each stage with
 base in the informations provided in that stage. He can used when you 
 need check the best possible the each interaction. Here the method is 
 used for select the bigger number between five option in each stage and
-sum the selected element and recorde in the variable Bigger 
+sum the selected element and recorde in the variable Bigger. 
 
 <h3>The walking in a Matrix</h3>
 
@@ -146,6 +146,15 @@ In this moment we have four procedure happening:
   <li>Change the position of the Jack</li>
   <li>Sum of selected elements</li>
 </ul>
+
+<ul>
+  <li>Receive parameters:</li>
+</ul>
+
+The first stage is the pass to function the parameters in the main, look:
+
+![](https://user-images.githubusercontent.com/107070061/226407229-337bbf41-c67c-4d45-8b5c-39ae8607caa6.png)
+
 
 <h3>Results</h3>
 
