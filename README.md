@@ -177,6 +177,28 @@ look:
 
 ![](https://user-images.githubusercontent.com/107070061/226456408-a04dd628-f39a-4910-9428-5086a03845a9.png)
 
+whatch that first is necessary to analyze if is possible performed the check, because 
+if the position not exist, an error will, that IDE will notify like "segmentation fault",
+if the check will true, start a checking the values of the neighbors positions in around
+the current position, they are: main diagonal of down, second diagonal of down, the right,
+the left and the down. when meet the Bigger between five options, it´s save in the variable
+Bigger.
+
+<ul>
+  <li>Change the position of the Jack:</li>
+</ul>
+
+After meet the Bigger element in the current stage, the Jack walking the position where 
+this element be. look:
+
+![](https://user-images.githubusercontent.com/107070061/226481108-af3c51dc-8cce-4233-bd9f-eb628a455342.png)
+
+Watch that change and sum the value that have the current position after the Jack change your
+position, look this:
+
+![](https://user-images.githubusercontent.com/107070061/226481417-3f84280f-f385-4d91-b595-147c62312bcf.png)
+
+
 <h3>Results</h3>
 
 <h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
