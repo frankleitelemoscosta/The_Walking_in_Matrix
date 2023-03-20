@@ -138,13 +138,12 @@ and start the walking per matrix, look:
 
 ![](https://user-images.githubusercontent.com/107070061/226205746-e24152ef-b361-4a71-b179-a39ebd03aac4.png)
 
-In this moment we have four procedure happening:
+In this moment we have three procedure happening:
 
 <ul>
   <li>Receiving parameters</li>
   <li>Check the neighbors</li>
-  <li>Change the position of the Jack</li>
-  <li>Sum of selected elements</li>
+  <li>Change the position of the Jack and Sum of selected elements</li>
 </ul>
 
 <ul>
@@ -185,7 +184,7 @@ the left and the down. when meet the Bigger between five options, it´s save in 
 Bigger.
 
 <ul>
-  <li>Change the position of the Jack:</li>
+  <li>Change the position of the Jack and Sum of selected elements:</li>
 </ul>
 
 After meet the Bigger element in the current stage, the Jack walking the position where 
@@ -197,6 +196,10 @@ Watch that change and sum the value that have the current position after the Jac
 position, look this:
 
 ![](https://user-images.githubusercontent.com/107070061/226481417-3f84280f-f385-4d91-b595-147c62312bcf.png)
+
+What happend if this check will true, the Row is sum with one, and the sum variable is added
+of itself the before value, and this way the Jack walking per the matrix.
+
 
 
 <h3>Results</h3>
