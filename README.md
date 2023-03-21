@@ -200,9 +200,19 @@ position, look this:
 What happend if this check will true, the Row is sum with one, and the sum variable is added
 of itself the before value, and this way the Jack walking per the matrix.
 
-
-
 <h3>Results</h3>
+
+For you see the way like this algorithm works, here have a example of input and output, look:
+
+Input(data file and two start questions):
+
+![](https://user-images.githubusercontent.com/107070061/226606386-889cbc19-fb1c-49fb-b9cb-a9d33a679759.png)
+
+![](https://user-images.githubusercontent.com/107070061/226608664-f674a563-0f14-4ee5-8f7f-5105c27a9cf1.png)
+
+Output:
+
+![](https://user-images.githubusercontent.com/107070061/226606284-f48886c5-3879-4d19-9afa-d265e6e5e8c9.png)
 
 <h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
 

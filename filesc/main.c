@@ -97,7 +97,7 @@ int main() {
         printf("You want init the walking in the matrix in the colunm?");
         scanf("%d",&initColunm);
 
-        printf("init this program with the [%d]° matrix in the row [%d] and colunm [%d]\nnow this program will walkin to position that will have the bigger element\n",Counter_aux,initRow,initColunm);
+        printf("Start this program with the [%d]° matrix in the row [%d] and colunm [%d]\nnow this program will walkin to position that will have the bigger element\n",Counter_aux,initRow,initColunm);
 
         SearchingTheBiggerElement(&Matrix,initColunm,initRow,&sum);
 
