@@ -26,12 +26,12 @@ sum the selected element and recorde in the variable Bigger.
 <h3>The walking in a Matrix</h3>
 
 <p style = "text-align = justify">
-This project use the walking in a matrix for arrive in the last position of a 
+This project use the walking in a matrix for arrive in the last position of 
 any matrix and sum the elements per where pass, because is necessary sum all 
 bigger numbers and show the result in the finish of the walking. this implemetation
-happend whit a while that have like stop a one variable that not change while
-the jack no arrive the last position of the matrix, and while this loop is 
-executed into in five beguiner checks construed with five ternary operators,
+ocurred whit a "while" that have like stop a variable as not change while
+Jack didn't arrive at the last position of the matrix, and when "while" is 
+executed into in five beginner checks, construed with five ternary operators,
 it´s other way of use "if" and "else", but, what happend when into in this a
 function? what happend is the acess the adress in the houses around the current
 house and check if the variable Bigger that in start execution the 
