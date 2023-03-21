@@ -91,7 +91,7 @@ be collected.
 <p style = "text-align = justify">
 Later the compiler open again the data file and read the first matrix recorded 
 in this file, and this can seem repetitive and wrong, but no because in the 
-moment of recorde matrix in the data file is used just one matrix and when add
+moment of recorde matrix in the data file is used just one matrix, and when add
 the more of one matrix, and the matrix will be with the last matrix generated
 per the program. With the file open the read all matrix and recorde in a vector.
 </p>
@@ -122,35 +122,35 @@ the vector, and fills only the Row and Column variables.
   <li>Alocation the vector:</li>
 </ul>
 
-The vector is alocated with the use of the variable Row, the matrix of the program
-every is square, so was possible use the pow function of the librari math for have
-the total number of elements, and use too the malloc function for accomplish the 
-alocation.
+<p style = "text-align = justify">
+The vector is allocated with the use of the variable Row, the matrix of the program
+ever is square, so was possible to use the pow function of the library math to have
+the total number of elements, and use the malloc function to accomplish the 
+allocation.
+</p>
 
 <ul>
   <li>Filling in the vector:</li>
 </ul>
 
-For filling in the vector was used the fscanf and after this vector use for filling
-the matrix when solicited for user.
+<p style = "text-align = justify">
 
-After the compiler into to the while where the filling in matrix and the walking 
-happend.When the compiler is in the while where the change and walking happend you will
-see the question: "You want init the walking in the matrix in the row?" and the
-question: "You want init the walking in the matrix in the colunm?".This is happend
-after the filling in the matrix, where a counter will forward for acess the houses
-of vector and atribuation to matrix, what happend is that each stage that this 
-function is open the counter stop where star other matrix, and this way every 
-acess this function the matrix will filling in with a new numbers.
+"fscanf" was used to fill the vector, and after that the vector is used to fill the matrix when requested by the user.
 
-The function:
+After this the compiler into the "while" where the filling in the matrix and the walking happened. 
+When the compiler is in the "while" where the change and walking happen you will
+see the question: "You want to start walking in the matrix in the row?" and the
+question: "You want to initiate the walking in the matrix in the column?".This is happen
+after filling in the matrix, where a counter will forward for access the houses
+of vector and attributions to the matrix, what happened is that at each stage this 
+the function is open the counter stop where start other matrices, and this way ever
+access this function the matrix will fill in with new numbers, and this function be
+in between lines 55 at 67.
+</p>
 
-![](https://user-images.githubusercontent.com/107070061/226183797-ab0bd994-0470-4174-9e1e-879626d951f1.png)
-
+<p style = "text-align = justify">
 Later the two start questions the function "SearchingTheBiggerElement" is called
 and start the walking per matrix, look:
-
-![](https://user-images.githubusercontent.com/107070061/226205746-e24152ef-b361-4a71-b179-a39ebd03aac4.png)
 
 In this moment we have three procedure happening:
 
@@ -159,6 +159,7 @@ In this moment we have three procedure happening:
   <li>Check the neighbors</li>
   <li>Change the position of the Jack and Sum of selected elements</li>
 </ul>
+</p>
 
 <ul>
   <li>Receiving parameters:</li>
@@ -168,18 +169,22 @@ The first stage is the pass to function the parameters in the main, look:
 
 ![](https://user-images.githubusercontent.com/107070061/226407229-337bbf41-c67c-4d45-8b5c-39ae8607caa6.png)
 
+<p style = "text-align = justify">
 this parameters are: one variable of the type Matrix struct, start row and
 colunm, and the last parameter is a varable that recorde the sum of the big
-numbers along the way of the Jack. 
+numbers along the way of the Jack.
+</p> 
 
 When this variable arrive in the function will have this uses:
 
 ![](https://user-images.githubusercontent.com/107070061/226456540-103ab10b-20ae-408f-8810-2e30b4ec428f.png)
 
+<p style = "text-align = justify">
 Watch that four variables was added in the function and two variables received
 the start row and start colunm, because is necessary change the variable in each 
 iteration, and the two first operation are performed because for the start position
 have means in the finish procedure
+</p>
 
 <ul>
   <li>Check the neighbors:</li>
@@ -190,12 +195,14 @@ look:
 
 ![](https://user-images.githubusercontent.com/107070061/226456408-a04dd628-f39a-4910-9428-5086a03845a9.png)
 
+<p style = "text-align = justify">
 whatch that first is necessary to analyze if is possible performed the check, because 
 if the position not exist, an error will, that IDE will notify like "segmentation fault",
 if the check will true, start a checking the values of the neighbors positions in around
 the current position, they are: main diagonal of down, second diagonal of down, the right,
 the left and the down. when meet the Bigger between five options, it´s save in the variable
 Bigger.
+</p>
 
 <ul>
   <li>Change the position of the Jack and Sum of selected elements:</li>
@@ -228,16 +235,20 @@ Output:
 
 ![](https://user-images.githubusercontent.com/107070061/226606284-f48886c5-3879-4d19-9afa-d265e6e5e8c9.png)
 
+<p style = "text-align = justify">
 How expected the Jack walking per positon of the matrix that had the bigger
 elements and sumed this components, and with this Jack arrive the last element
 of the matrix that was the goal.
+</p>
 
 <h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
 
+<p style = "text-align = justify">
 This project use the Make file for compiler all files that have function
 for operation in the all executions for walking in the matrix and sum the
 elements, these are the pictures for you to understand how compiler and
 know how this project works that are divide in three parts,look:
+</p>
 
 <ul>
   <li>Compilation</li>
@@ -247,6 +258,7 @@ know how this project works that are divide in three parts,look:
 
 ![](https://user-images.githubusercontent.com/107070061/226108916-b37c30be-d111-4ec2-9d4a-1e01bd3901ed.gif)
 
+<p style = "text-align = justify">
 The first comand compile the code and used the comand with "gcc", this is 
 happend because the Make file is just a list of comands that required when 
 their comands are write in the terminal, this means that you can open the
@@ -255,6 +267,7 @@ will happend the compile and execute and remove the executable. Each comand
 will do a action,the make compiler, and make run execute the executable that
 was generated when the comand make wrote in terminal, and the make clean
 clean the executable the files of the project, they are:
+</p>
 
 When write the make comand:
 
