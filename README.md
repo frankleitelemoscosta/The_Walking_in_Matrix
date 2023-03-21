@@ -26,20 +26,20 @@ sum the selected element and recorde in the variable Bigger.
 <h3>The walking in a Matrix</h3>
 
 <p style = "text-align = justify">
-This project use the walking in a matrix for arrive in the last position of 
-any matrix and sum the elements per where pass, because is necessary sum all 
-bigger numbers and show the result in the finish of the walking. this implemetation
-ocurred whit a "while" that have like stop a variable as not change while
+This project uses walking in a matrix to arrive at the last position of 
+any matrix and sum the elements per where pass, because is necessary to sum all 
+bigger numbers and show the result at the finish of the walking. this implementation
+occurred whit a "while" that has like stop a variable that does not change while
 Jack didn't arrive at the last position of the matrix, and when "while" is 
-executed into in five beginner checks, construed with five ternary operators,
-it´s other way of use "if" and "else", but, what happend when into in this a
-function? what happend is the acess the adress in the houses around the current
+executed into five beginner checks, construed with five ternary operators,
+it´s another way of using "if" and "else", but, what happened when into this a
+function? what happened is the access to the addresses in the houses around the current
 house and check if the variable Bigger that in start execution the 
-"SearchingTheBiggerElement" function like zero and other stage that finish
+"SearchingTheBiggerElement" function like zero and another stage that finishes
 the check this variable return for zero and recalculate again, because in the
-next check the last result can make a difference in the search the bigger 
-number, because the variable Bigger will have the bigger value of the last
-case can with this changed the real result of the current case the case. 
+next check if the last result can make a difference in the search the bigger 
+number, because the variable Bigger will have a bigger value of the last
+case can this change the real result of the current case.
 </p>
 
 <h2>ONE EXAMPLE OF THE COMPILATION AND EXPLANATIONS ABOUT PROJECT</h2>
