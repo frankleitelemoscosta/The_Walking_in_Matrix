@@ -28,34 +28,36 @@ no arrive the last position of the matrix, and while this loop is executed into
 in five beguiner checks construed with five ternary operators,it´s other way
 of use "if" and "else", but, what happend when into in this a function? what happend
 is the acess the adress in the houses around the current house and check if the
-variable Bigger that in init execution the "SearchingTheBiggerElement" function
-like zero and other stage that finish the check this variable return for zero,
-because in the next check the last result can make a difference in the search 
-the bigger number, because the variable Bigger will have the bigger value of the
-last case can with this changed the real result of the current case
-the case that in this explain use the greedy method, this method in this case 
-will select the bigger numbers and sum with the last bigger number that sumed
-the variable sum that in the predecessor execution of the loop with check the
-houses around the where jack be in the 
+variable Bigger that in start execution the "SearchingTheBiggerElement" function
+like zero and other stage that finish the check this variable return for zero
+and recalculated again, because in the next check the last result can make a 
+difference in the search the bigger number, because the variable Bigger will
+have the bigger value of the last case can with this changed the real result
+of the current case the case that in this explain use the greedy method, this
+method in this case will select the bigger numbers and sum with the last bigger
+number that sumed the variable sum that in the predecessor execution of the loop
+with check the houses around the where jack be in the 
 
 <h2>ONE EXAMPLE OF THE COMPILATION AND EXPLANATIONS ABOUT PROJECT</h2>
 
 Here you will see the program and your execution, that is divide in three visual
 stages, they are:
 
+OBS: If you wanna see this stages in pratice, you skip for part of the readme that 
+tell about the compilation this project and understand the compilation way, and after
+you need return for here.
+
 <ul>
-  <li>Compilation</li>
+  <li>Extract of informations</li>
   <li>Information Processing</li>
   <li>Results</li>
 </ul>
 
-<h3>Compilation</h3>
+<h3>Extract of informations</h3>
 
-The compiler is the first thing for you execute and happend for start the program,
-for this you write make in terminal and after you write make run for execute
-the program look:
-
-![](https://user-images.githubusercontent.com/107070061/226108916-b37c30be-d111-4ec2-9d4a-1e01bd3901ed.gif)
+The extract of informations is the first thing that is execute and happend when
+you start the program, for this you write make in terminal and after you write 
+make run for execute the program, and extraction information will be collected.
 
 <h3>Information Processing</h3>
 
@@ -213,6 +215,10 @@ Input(data file and two start questions):
 Output:
 
 ![](https://user-images.githubusercontent.com/107070061/226606284-f48886c5-3879-4d19-9afa-d265e6e5e8c9.png)
+
+How expected the Jack walking per positon of the matrix that had the bigger
+elements and sumed this components, and with this Jack arrive the last element
+of the matrix that was the goal.
 
 <h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
 
