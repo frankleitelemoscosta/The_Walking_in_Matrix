@@ -62,16 +62,18 @@ you need return for here.
 <h3>Extract of informations and Filling in the data file</h3>
 
 <p style = "text-align = justify">
-Before the extract ocurred one insertion, where the first comand is open and
+Before the extract ocurre one insertion, where the first comand is open and
 write the file data that not have the matrix for walking, in this moment
 the function "SetMatrixSize" and function "SaveMatrix" are called and insert 
 in the file the size and the elements of the matrix, the location where this
 function be is the lines 26 at 32.
+</p>
 
 Insert elements in the matrix:
 
 ![](https://user-images.githubusercontent.com/107070061/226119230-e25537be-8889-48f3-a903-aea7a2b00a11.gif)
 
+<p style = "text-align = justify">
 This insertion happend with use the function "GeneretaMatrixValues", this 
 function filling in the matrix of the struct Matrix with random values with
 the used the function "rand()" of the C programming lenguage with values between
@@ -87,14 +89,12 @@ be collected.
 <h3>Information Processing</h3>
 
 <p style = "text-align = justify">
-After this procedure the compiler read a main,
-</p>
-
 Later the compiler open again the data file and read the first matrix recorded 
 in this file, and this can seem repetitive and wrong, but no because in the 
 moment of recorde matrix in the data file is used just one matrix and when add
 the more of one matrix, and the matrix will be with the last matrix generated
 per the program. With the file open the read all matrix and recorde in a vector.
+</p>
 
 Location where this procedure happend in the code:
 
@@ -112,9 +112,11 @@ In short in this moment happend three things:
   <li>Recovery the size matrix:</li>
 </ul>
 
+<p style = "text-align = justify">
 The recovery the size matrix happend per a open the data file, and read the first
 row, and stop the read with the break, because in this while not filling the vector
 and just filling in the variables Row and Colunm.
+</p>
 
 <ul>
   <li>Alocation the vector:</li>
