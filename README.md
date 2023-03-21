@@ -59,23 +59,14 @@ you need return for here.
   <li>Results</li>
 </ul>
 
-<h3>Extract of informations</h3>
+<h3>Extract of informations and Filling in the data file</h3>
 
 <p style = "text-align = justify">
-The extract of informations is the first thing that is execute and happend when
-you start the program, for this you write make in terminal and after you write 
-make run for execute the program, and extraction information will be collected.
-</p>
-
-<h3>Information Processing</h3>
-
-<p style = "text-align = justify">
-After this procedure the compiler read a main, where the first comand is open
-and write the file data that not have the matrix for walking, in this moment
+Before the extract ocurred one insertion, where the first comand is open and
+write the file data that not have the matrix for walking, in this moment
 the function "SetMatrixSize" and function "SaveMatrix" are called and insert 
 in the file the size and the elements of the matrix, the location where this
-function be is the lines 26 at 32
-</p>
+function be is the lines 26 at 32.
 
 Insert elements in the matrix:
 
@@ -86,6 +77,18 @@ function filling in the matrix of the struct Matrix with random values with
 the used the function "rand()" of the C programming lenguage with values between
 0-99, this interval was selected because it´s not good have the big values for 
 sum.
+
+The extract of informations is the second thing that is execute and happend 
+when you start the program, for this you write make in terminal and after 
+you write make run for execute the program, and extraction information will
+be collected.
+</p>
+
+<h3>Information Processing</h3>
+
+<p style = "text-align = justify">
+After this procedure the compiler read a main,
+</p>
 
 Later the compiler open again the data file and read the first matrix recorded 
 in this file, and this can seem repetitive and wrong, but no because in the 
