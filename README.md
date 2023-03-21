@@ -22,19 +22,19 @@ sum the selected element and recorde in the variable Bigger.
 <h3>The walking in a Matrix</h3>
 
 This project use the walking in a matrix for arrive in the last position of a 
-any matrix and sum per where pass, because is necessary sum all bigger numbers
-and show the result in the finish of the walking. this implemetation happend 
-whit a while that have like stop a one variable that not change while the jack
-no arrive the last position of the matrix, and while this loop is executed into
-in five beguiner checks construed with five ternary operators,it´s other way of
-use "if" and "else", but, what happend when into in this a function? what happend
-is the acess the adress in the houses around the current house and check if the
-variable Bigger that in start execution the "SearchingTheBiggerElement" function
-like zero and other stage that finish the check this variable return for zero
-and recalculate again, because in the next check the last result can make a 
-difference in the search the bigger number, because the variable Bigger will
-have the bigger value of the last case can with this changed the real result
-of the current case the case. 
+any matrix and sum the elements per where pass, because is necessary sum all 
+bigger numbers and show the result in the finish of the walking. this implemetation
+happend whit a while that have like stop a one variable that not change while
+the jack no arrive the last position of the matrix, and while this loop is 
+executed into in five beguiner checks construed with five ternary operators,
+it´s other way of use "if" and "else", but, what happend when into in this a
+function? what happend is the acess the adress in the houses around the current
+house and check if the variable Bigger that in start execution the 
+"SearchingTheBiggerElement" function like zero and other stage that finish
+the check this variable return for zero and recalculate again, because in the
+next check the last result can make a difference in the search the bigger 
+number, because the variable Bigger will have the bigger value of the last
+case can with this changed the real result of the current case the case. 
 
 <h2>ONE EXAMPLE OF THE COMPILATION AND EXPLANATIONS ABOUT PROJECT</h2>
 
