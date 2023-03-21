@@ -94,10 +94,9 @@ in this file, and this can seem repetitive and wrong, but no because in the
 moment of recorde matrix in the data file is used just one matrix, and when add
 the more of one matrix, and the matrix will be with the last matrix generated
 per the program. With the file open the read all matrix and recorde in a vector.
-And this happened in the between Rows 34 at 77 in the file "matriz.c".
+And this happened in the between Rows 34 at 77 in the file "matriz.c".In short in 
+this moment happend three things:
 </p>
-
-In short in this moment happend three things:
 
 <ul>
   <li>Recovery the size of matrix</li>
