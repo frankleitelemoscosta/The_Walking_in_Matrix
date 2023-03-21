@@ -211,12 +211,11 @@ For you see the way like this algorithm works, here have a example of input and 
 Input(data file and two start questions):
 
 ![](https://user-images.githubusercontent.com/107070061/226606386-889cbc19-fb1c-49fb-b9cb-a9d33a679759.png)
-
 ![](https://user-images.githubusercontent.com/107070061/226608664-f674a563-0f14-4ee5-8f7f-5105c27a9cf1.png)
 
 Output:
 
-![](https://user-images.githubusercontent.com/107070061/226606284-f48886c5-3879-4d19-9afa-d265e6e5e8c9.png)
+![](https://user-images.githubusercontent.com/107070061/226737542-bb5a5044-b483-48b1-b923-e658af182f42.png)
 
 <p style = "text-align = justify">
 How expected the Jack walking per positon of the matrix that had the bigger
