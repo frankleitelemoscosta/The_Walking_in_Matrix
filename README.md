@@ -62,7 +62,7 @@ you need return for here.
 <h3>Extract of informations and Filling in the data file</h3>
 
 <p style = "text-align = justify">
-Before the extract ocurre one insertion, where the first comand is open and
+Before the extract happened one insertion, where the first comand is open and
 write the file data that not have the matrix for walking, in this moment
 the function "SetMatrixSize" and function "SaveMatrix" are called and insert 
 in the file the size and the elements of the matrix, the location where this
