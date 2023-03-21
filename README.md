@@ -1,5 +1,7 @@
 <h1>The_Walking_in_a_Matrix</h1>
 
+<img src="images/logo-C.png" alt="">
+
 <h2>THE PROBLEM</h2>
 
 <p style = "text-align = justify">
