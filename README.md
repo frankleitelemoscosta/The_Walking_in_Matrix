@@ -147,9 +147,7 @@ in between lines 55 at 67.
 
 <p style = "text-align = justify">
 Later the two start questions the function "SearchingTheBiggerElement" is called
-and start the walking per matrix, look:
-
-In this moment we have three procedure happening:
+and start the walking per matrix. In this moment we have three procedure happening:
 
 <ul>
   <li>Receiving parameters</li>
