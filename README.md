@@ -6,13 +6,14 @@
 This problem is about how walking in a matrix, where the Jack can init in
 any position of the matrix and he will walking per it for the houses with 
 the bigger element, and for that it´s necessary to make different checks 
-in the positions of the matrix, checks in right or down or in the diagon-
-ally or back one position, and after go to the position that have the bi-
+in the positions of the matrix, checks in right or down or in the diagon
+ally or back one position, and after go to the position that have the bi
 gger element between the five options, this is a greedy algorithm.
 </p>
 
 <h3>Greedy Algorithm</h3>
 
+<p style = "text-align = justify">
 This method check all options that you have in the moment and select the 
 best options and it´s not important if this is good or bad in the future, 
 in other words the greedy method make the best select in each stage with 
@@ -20,6 +21,7 @@ base in the informations provided in that stage. He can used when you
 need check the best possible the each interaction. Here the method is 
 used for select the bigger number between five option in each stage and
 sum the selected element and recorde in the variable Bigger. 
+</p>
 
 <h3>The walking in a Matrix</h3>
 
