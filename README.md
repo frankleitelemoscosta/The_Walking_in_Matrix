@@ -44,12 +44,14 @@ case can with this changed the real result of the current case the case.
 
 <h2>ONE EXAMPLE OF THE COMPILATION AND EXPLANATIONS ABOUT PROJECT</h2>
 
+<p style = "text-align = justify">
 Here you will see the program and your execution, that is divide in three visual
 stages, they are:
 
 OBS: If you wanna see this stages in pratice, you skip for part of the readme that 
 tell about the compilation this project and understand the compilation way, and after
 you need return for here.
+</p>
 
 <ul>
   <li>Extract of informations</li>
@@ -59,20 +61,21 @@ you need return for here.
 
 <h3>Extract of informations</h3>
 
+<p style = "text-align = justify">
 The extract of informations is the first thing that is execute and happend when
 you start the program, for this you write make in terminal and after you write 
 make run for execute the program, and extraction information will be collected.
+</p>
 
 <h3>Information Processing</h3>
 
+<p style = "text-align = justify">
 After this procedure the compiler read a main, where the first comand is open
 and write the file data that not have the matrix for walking, in this moment
 the function "SetMatrixSize" and function "SaveMatrix" are called and insert 
-in the file the size and the elements of the matrix, look:
-
-Location where the function be in the main file:
-
-![](https://user-images.githubusercontent.com/107070061/226125908-841bb7df-d8d9-4c62-8e0b-346aef1f8646.png)
+in the file the size and the elements of the matrix, the location where this
+function be is the lines 26 at 32
+</p>
 
 Insert elements in the matrix:
 
