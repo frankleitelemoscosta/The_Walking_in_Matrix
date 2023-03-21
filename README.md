@@ -1,6 +1,6 @@
 <h1>The_Walking_in_a_Matrix</h1>
 
-<img src="images/logo-C.png" alt="" style="width: 20%">
+<img src="images/logo-C.png" alt="" style="width: 10%">
 
 <h2>THE PROBLEM</h2>
 
