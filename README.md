@@ -162,18 +162,11 @@ and start the walking per matrix. In this moment we have three procedure happeni
 <p style = "text-align = justify">
 The parameters are: one variable of the type Matrix struct, start row and start
 column, and the last parameter is a variable that record the sum of the big
-numbers along the way of the Jack.
-</p> 
-
-When this variable arrive in the function will have this uses:
-
-![](https://user-images.githubusercontent.com/107070061/226456540-103ab10b-20ae-408f-8810-2e30b4ec428f.png)
-
-<p style = "text-align = justify">
-Watch that four variables was added in the function and two variables received
-the start row and start colunm, because is necessary change the variable in each 
-iteration, and the two first operation are performed because for the start position
-have means in the finish procedure
+numbers along the way of the Jack. Watch in the file "matriz.c" in the lines 85 at 99
+inside the function "SearchingTheBiggerElement" that four variables was added in
+the function and two variables received the start row and start colunm, because
+is necessary change the variable in each iteration, and the two first operation
+are performed because for the start position have means in the finish procedure
 </p>
 
 <ul>
