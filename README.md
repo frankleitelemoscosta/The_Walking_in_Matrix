@@ -113,9 +113,9 @@ In short in this moment happend three things:
 </ul>
 
 <p style = "text-align = justify">
-The recovery size matrix happens per a open data file, and reading the first
-row, and stop the read with the break, because in this while not filling the vector
-and just filling in the variables Row and Column.
+The recovery of the matrix size occurs through a data file, opened for the reading of 
+the first line, and stop reading with a break, because the first line does not fill 
+the vector, and fills only the Row and Column variables.
 </p>
 
 <ul>
