@@ -141,7 +141,7 @@ after filling in the matrix, where a counter will forward for access the houses
 of vector and attributions to the matrix, what happened is that at each stage this 
 the function is open the counter stop where start other matrices, and this way ever
 access this function the matrix will fill in with new numbers, and this function be
-in between lines 55 at 67.
+in between lines 55 at 67in the file "matriz.c".
 </p>
 
 <p style = "text-align = justify">
