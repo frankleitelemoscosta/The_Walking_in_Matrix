@@ -6,7 +6,7 @@
 
 int main() {
     //environment variables
-        signed int numberMatrices = 50;
+        signed int numberMatrices = 2;
         Matrix Matrix;
         int Counter = 0;
         signed int stop = 1;
@@ -117,7 +117,7 @@ int main() {
             }
         //finish this operator
 
-        if(option == 'N'){
+        if(option == 'N' || Counter == (HousesOfvet*numberMatrices)){
             free(vet);
             break;
             }//finish the while

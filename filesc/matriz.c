@@ -117,10 +117,6 @@ void SearchingTheBiggerElement(Matrix *matrix,signed int initRow,signed int init
 
         (Row == (rows - 1)) ? (*sum += matrix->Matrix[Row][Colunm + 1].value , matrix->Matrix[Row][Colunm + 1].value = 0, Colunm = Colunm + 1) : (Row = Row);//for to check if the jack is in the last row
 
-        /*
-            printf("%d\n ",Bigger);
-            getchar();
-        */
         Bigger = 0;
 
         (Row == (rows-1) && Colunm == (columns - 1)) ? (stop = 1) : (stop = stop);//stop the search
