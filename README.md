@@ -139,18 +139,18 @@ see the question: "You want to start walking in the matrix in the row?" and the
 question: "You want to initiate the walking in the matrix in the column?".This is happen
 after filling in the matrix, where a counter will forward for access the houses
 of vector and attributions to the matrix, what happened is that at each stage this 
-the function is open the counter stop where start other matrices, and this way ever
+the function is open the counter where start other matrices, and this way ever
 access this function the matrix will fill in with new numbers, and this function be
 in between lines 55 at 67in the file "matriz.c".
 </p>
 
 <p style = "text-align = justify">
-Later the two start questions the function "SearchingTheBiggerElement" is called
+Later the two questions for start, the function "SearchingTheBiggerElement" is called
 and start the walking per matrix. In this moment we have three procedure happening:
 
 <ul>
   <li>Receiving parameters</li>
-  <li>Check the neighbors</li>
+  <li>Analysis the neighbors</li>
   <li>Change the position of the Jack and Sum of selected elements</li>
 </ul>
 </p>
@@ -170,21 +170,17 @@ are performed because for the start position have means in the finish procedure
 </p>
 
 <ul>
-  <li>Check the neighbors:</li>
+  <li>Analysis the neighbors:</li>
 </ul>
 
-Later the received the compiler into to while that start the search in the matrix,
-look:
-
-![](https://user-images.githubusercontent.com/107070061/226456408-a04dd628-f39a-4910-9428-5086a03845a9.png)
-
 <p style = "text-align = justify">
-whatch that first is necessary to analyze if is possible performed the check, because 
-if the position not exist, an error will, that IDE will notify like "segmentation fault",
-if the check will true, start a checking the values of the neighbors positions in around
-the current position, they are: main diagonal of down, second diagonal of down, the right,
-the left and the down. when meet the Bigger between five options, it´s save in the variable
-Bigger.
+Later the compiler into in the "while" that start the search in the matrix, you can see
+in the lines 105 at 109, whatch that first is necessary to analyze if is possible performed
+the check, because if the position not exist, an error will, that IDE will notify like 
+"segmentation fault", if the check will true, start a checking the values of the neighbors
+positions in around the current position, they are: main diagonal of down, second diagonal
+of down, the right, the left and the down. when meet the Bigger between five options, it´s
+save in the variable Bigger.
 </p>
 
 <ul>
