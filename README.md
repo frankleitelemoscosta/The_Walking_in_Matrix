@@ -30,13 +30,10 @@ of use "if" and "else", but, what happend when into in this a function? what hap
 is the acess the adress in the houses around the current house and check if the
 variable Bigger that in start execution the "SearchingTheBiggerElement" function
 like zero and other stage that finish the check this variable return for zero
-and recalculated again, because in the next check the last result can make a 
+and recalculate again, because in the next check the last result can make a 
 difference in the search the bigger number, because the variable Bigger will
 have the bigger value of the last case can with this changed the real result
-of the current case the case that in this explain use the greedy method, this
-method in this case will select the bigger numbers and sum with the last bigger
-number that sumed the variable sum that in the predecessor execution of the loop
-with check the houses around the where jack be in the 
+of the current case the case. 
 
 <h2>ONE EXAMPLE OF THE COMPILATION AND EXPLANATIONS ABOUT PROJECT</h2>
 
