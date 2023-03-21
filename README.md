@@ -54,7 +54,7 @@ you need return for here.
 </p>
 
 <ul>
-  <li>Extract of informations</li>
+  <li>Extract of informations and Filling in the data file</li>
   <li>Information Processing</li>
   <li>Results</li>
 </ul>
@@ -159,13 +159,9 @@ and start the walking per matrix. In this moment we have three procedure happeni
   <li>Receiving parameters:</li>
 </ul>
 
-The first stage is the pass to function the parameters in the main, look:
-
-![](https://user-images.githubusercontent.com/107070061/226407229-337bbf41-c67c-4d45-8b5c-39ae8607caa6.png)
-
 <p style = "text-align = justify">
-this parameters are: one variable of the type Matrix struct, start row and
-colunm, and the last parameter is a varable that recorde the sum of the big
+The parameters are: one variable of the type Matrix struct, start row and start
+column, and the last parameter is a variable that record the sum of the big
 numbers along the way of the Jack.
 </p> 
 
