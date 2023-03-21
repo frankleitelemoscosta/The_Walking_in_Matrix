@@ -2,12 +2,12 @@
 
 <h2>THE PROBLEM</h2>
 
-This problem is about how walking in a matrix, where the Jack can init in
-any position of the matrix and he will walking per it for the houses with 
-the bigger element, and for that it´s necessary to make different checks 
-in the positions of the matrix, checks in right or down or in the diagonally 
-or back one position, and after go to the position that have the bigger 
-element between the five options, this is a greedy algorithm. 
+This problem is about how walking in a matrix, where the Jack can init in<br>
+any position of the matrix and he will walking per it for the houses with<br> 
+the bigger element, and for that it´s necessary to make different checks <br>
+in the positions of the matrix, checks in right or down or in the        <br>
+diagonally or back one position, and after go to the position that have  <br>
+the bigger element between the five options, this is a greedy algorithm. <br>
 
 <h3>Greedy Algorithm</h3>
 
