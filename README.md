@@ -202,13 +202,12 @@ will executed.
   <li>Change the position of the Jack and Sum of selected elements:</li>
 </ul>
 
+<p style = "text-align = justify">
 After meet the Bigger element in the current stage, the Jack walking the position where 
-this element be. look:
-
-![](https://user-images.githubusercontent.com/107070061/226481108-af3c51dc-8cce-4233-bd9f-eb628a455342.png)
-
-Watch that change and sum the value that have the current position after the Jack change your
-position, look this:
+this element be, that occurs in the lines 112 at 116 of the file "matriz.c", Watch in 
+this file that change and sum the value that have the current position after the Jack
+change your position, look this:
+</p>
 
 ![](https://user-images.githubusercontent.com/107070061/226481417-3f84280f-f385-4d91-b595-147c62312bcf.png)
 
