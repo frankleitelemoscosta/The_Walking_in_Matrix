@@ -34,7 +34,7 @@ int main() {
     //open the file to remove the matrices
         FILE *file;
 
-        file = fopen("dados.data","r");
+        file = fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dataset/dados.data","r");
         if(file == NULL){
             printf("This is not open!");
             return 1;//finish the program and return the value 1

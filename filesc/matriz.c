@@ -14,7 +14,7 @@ void GeneretaMatrixValues(Matrix *matrix)
 void SetMatrixSize(){
     FILE *file;
 
-    file = fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.data","w");
+    file = fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dataset/dados.data","w");
     if(file == NULL){
         printf("This is not open !");
         return ;//vai apenas encerrar o programa
@@ -29,7 +29,7 @@ void SaveMatrix(Matrix *matrix)
 {
     FILE *file;
 
-    fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dados.data","a");
+    fopen("/home/frank/Documentos/TODOS OS ARQUIVOS(ATIVIDADES, LIVROS, ETC)DA FACULDADE/TERCEIRO PERÍODO/AEDS/Actives/First_active_AEDS/dataset/dados.data","a");
     if(file == NULL){
         printf("This is not open !");
         return ;//vai apenas encerrar o programa
