@@ -37,7 +37,7 @@ executed into five beginner checks, construed with five ternary operators,
 it´s another way of using "if" and "else", but, what happened when into this a
 function? what happened is the access to the addresses in the houses around the current
 house and check if the variable Bigger that in start execution the 
-"SearchingTheBiggerElement" function like zero and another stage that finishes
+"SearchingTheBiggerElement", function like zero and another stage that finishes
 the check this variable return for zero and recalculate again, because in the
 next check if the last result can make a difference in the search the bigger 
 number, because the variable Bigger will have a bigger value of the last
