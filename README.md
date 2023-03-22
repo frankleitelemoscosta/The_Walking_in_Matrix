@@ -32,16 +32,16 @@ This project uses walking in a matrix to arrive at the last position of
 any matrix and sum the elements per where pass, because is necessary to sum all 
 bigger numbers and show the result at the finish of the walking. this implementation
 occurred whit a "while" that has like stop a variable that does not change while
-Jack didn't arrive at the last position of the matrix, and when "while" is 
-executed into five beginner checks, construed with five ternary operators,
-it´s another way of using "if" and "else", but, what happened when into this a
-function? what happened is the access to the addresses in the houses around the current
-house and check if the variable Bigger that in start execution the 
-"SearchingTheBiggerElement", function like zero and another stage that finishes
-the check this variable return for zero and recalculate again, because in the
-next check if the last result can make a difference in the search the bigger 
-number, because the variable Bigger will have a bigger value of the last
-case can this change the real result of the current case.
+Jack didn't arrive at the last position of the matrix,and when "while" is
+performed in five initial checks, performed with five ternary operators,
+which is another way of using "if" and "else", but what happened when you got into this
+function? what happened is access to the addresses in the houses around the current
+house and check if the variable is greater than when executing the first iteration in the function
+"SearchingTheBiggerElement", in the next step that the verification
+of this variable returns to zero and recalculates again, because in the next verification
+the last result can make a difference in the search for the largest number, since the Largest
+variable can have a value greater than the last case, which can change the actual result of
+the current case.
 </p>
 
 <h2>ONE EXAMPLE OF THE COMPILATION AND EXPLANATIONS ABOUT PROJECT</h2>
