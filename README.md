@@ -182,7 +182,20 @@ the check, because if the position not exist, an error will, that IDE will notif
 "segmentation fault", if the check will true, start a checking the values of the neighbors
 positions in around the current position, they are: main diagonal of down, second diagonal
 of down, the right, the left and the down. when meet the Bigger between five options, it´s
-save in the variable Bigger.
+save in the variable Bigger, and whit this go to second stage of checks where the decision
+of walking is made, but if the options will is equals in all directions?, In this case the
+Jack will walking for the position that will possible walking for she.
+</p>
+
+<img src="images/matriz-nula-matrizes-matemarica.png" alt="" style="width: 25%">
+
+<p style = "text-align = justify">
+You can see that in this situation all options are equais, and the algorithm decision go to 
+the positon that can first possible walking per she right, will depend of situation, per 
+example in this case analysis the code the Jack walking for second diagonal of down, because
+in the moment that search in the neighbors what is the Bigger element found the last check
+is in the second diagonal of down, the Bigger is equal in all derections soon the last check
+will executed.
 </p>
 
 <ul>
