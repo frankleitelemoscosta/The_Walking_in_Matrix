@@ -187,7 +187,7 @@ of walking is made, but if the options will is equals in all directions?, In thi
 Jack will walking for the position that will possible walking for she.
 </p>
 
-<img src="images/matriz-nula-matrizes-matemarica.png" alt="" style="width: 25%">
+<img src="images/matriz-nula-matrizes-matematica.png" alt="" style="width: 25%">
 
 <p style = "text-align = justify">
 You can see that in this situation all options are equais, and the algorithm decision go to 
