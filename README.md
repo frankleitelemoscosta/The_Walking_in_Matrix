@@ -16,13 +16,14 @@ gger element between the five options, this is a greedy algorithm.
 <h3>Greedy Algorithm</h3>
 
 <p style = "text-align = justify">
-This method check all options that you have in the moment and select the 
-best options and it´s not important if this is good or bad in the future, 
-in other words the greedy method make the best select in each stage with 
-base in the informations provided in that stage. He can used when you 
-need check the best possible the each interaction. Here the method is 
-used for select the bigger number between five option in each stage and
-sum the selected element and recorde in the variable Bigger. 
+The Greedy Aligorithm is method for solver problems that involves make a
+good selection option locally and wanting to have a great global selection.
+For example, in the intetion of finding the shortest path between two points
+on a matrix, the greedy algorithm would choose the neighboring house with
+the shortest distance at each step until the destination is reached. He can used when you 
+need check the best possible in each iteration. Here the method is 
+used to select the bigger number between five options in each stage and
+sum the chosen element and record in the variable Bigger. 
 </p>
 
 <h3>The walking in a Matrix</h3>
@@ -228,9 +229,9 @@ Output:
 ![](https://user-images.githubusercontent.com/107070061/226737542-bb5a5044-b483-48b1-b923-e658af182f42.png)
 
 <p style = "text-align = justify">
-How expected the Jack walking per positon of the matrix that had the bigger
-elements and sumed this components, and with this Jack arrive the last element
-of the matrix that was the goal.
+occurred the expected! Jack was walking per positions of the matrix that haved the bigger
+element, and sumed the components, and with this Jack arrive at the last element
+of the matrix, that was the goal.
 </p>
 
 <h2>HOW TO DO FOR COMPILE THE CODE THIS PROJECT</h2>
